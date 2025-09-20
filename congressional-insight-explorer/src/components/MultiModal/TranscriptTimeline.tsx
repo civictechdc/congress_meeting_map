@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Search } from 'lucide-react';
+import { Clock, Pause, Play, Search } from 'lucide-react';
 import type { TranscriptMessage } from '../../lib/types';
-import { getAuthorInitials, formatTimestamp } from '../../lib/utils';
+import { getAuthorInitials, formatTimestamp, cn } from '../../lib/utils';
 
 interface TranscriptTimelineProps {
   messages: TranscriptMessage[];
@@ -32,12 +32,70 @@ const getSpeakerName = (speakerId: string): string => {
   return names[speakerId] || speakerId;
 };
 
+const parseTimestampToSeconds = (timestamp: string): number => {
+  const parts = timestamp.split(':').map(Number).filter(n => !Number.isNaN(n));
+
+  if (parts.length === 3) {
+    const [hours, minutes, seconds] = parts;
+    return hours * 3600 + minutes * 60 + seconds;
+  }
+
+  if (parts.length === 2) {
+    const [minutes, seconds] = parts;
+    return minutes * 60 + seconds;
+  }
+
+  if (parts.length === 1) {
+    return parts[0];
+  }
+
+  return 0;
+};
+
+const formatSeconds = (totalSeconds: number): string => {
+  if (!Number.isFinite(totalSeconds) || totalSeconds < 0) return '0:00';
+
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = Math.floor(totalSeconds % 60);
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+};
+
 export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({ 
   messages, 
   onMessageClick 
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredMessages, setFilteredMessages] = useState(messages);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const messagesWithTimings = useMemo(
+    () =>
+      messages
+        .map(message => ({
+          ...message,
+          startSeconds: parseTimestampToSeconds(message.startTime),
+        }))
+        .sort((a, b) => a.startSeconds - b.startSeconds),
+    [messages]
+  );
+
+  const activeMessageId = useMemo(() => {
+    const currentSeconds = currentTime;
+
+    let activeId: string | null = null;
+    for (const message of messagesWithTimings) {
+      if (message.startSeconds <= currentSeconds + 0.25) {
+        activeId = message.message_id;
+      } else {
+        break;
+      }
+    }
+
+    return activeId;
+  }, [currentTime, messagesWithTimings]);
 
   useEffect(() => {
     if (!searchQuery.trim()) {
@@ -51,8 +109,68 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
     }
   }, [searchQuery, messages]);
 
+  useEffect(() => {
+    const audioEl = audioRef.current;
+    if (!audioEl) return;
+
+    const handleTimeUpdate = () => setCurrentTime(audioEl.currentTime);
+    const handleLoadedMetadata = () => setDuration(audioEl.duration);
+    const handlePlay = () => setIsPlaying(true);
+    const handlePause = () => setIsPlaying(false);
+    const handleEnded = () => setIsPlaying(false);
+
+    audioEl.addEventListener('timeupdate', handleTimeUpdate);
+    audioEl.addEventListener('loadedmetadata', handleLoadedMetadata);
+    audioEl.addEventListener('play', handlePlay);
+    audioEl.addEventListener('pause', handlePause);
+    audioEl.addEventListener('ended', handleEnded);
+
+    return () => {
+      audioEl.removeEventListener('timeupdate', handleTimeUpdate);
+      audioEl.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      audioEl.removeEventListener('play', handlePlay);
+      audioEl.removeEventListener('pause', handlePause);
+      audioEl.removeEventListener('ended', handleEnded);
+    };
+  }, []);
+
+  const handleTogglePlayback = () => {
+    const audioEl = audioRef.current;
+    if (!audioEl) return;
+
+    if (audioEl.paused) {
+      void audioEl.play();
+    } else {
+      audioEl.pause();
+    }
+  };
+
+  const handleSeek = (newTime: number) => {
+    const audioEl = audioRef.current;
+    if (!audioEl) return;
+
+    audioEl.currentTime = newTime;
+    setCurrentTime(newTime);
+  };
+
+  const handleMessageSelection = (message: TranscriptMessage) => {
+    const audioEl = audioRef.current;
+    const targetTime = parseTimestampToSeconds(message.startTime);
+
+    if (audioEl) {
+      audioEl.currentTime = targetTime;
+      setCurrentTime(targetTime);
+      if (audioEl.paused) {
+        void audioEl.play();
+      }
+    }
+
+    onMessageClick?.(message);
+  };
+
   return (
     <div className="h-full flex flex-col">
+      <audio ref={audioRef} src="/audio/mono.m4a" preload="metadata" hidden />
       {/* Header */}
       <div className="p-4 border-b border-gray-200 bg-white">
         <h2 className="text-lg font-heading font-semibold text-gray-900">
@@ -61,6 +179,35 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
         <p className="text-sm text-gray-600 mt-1">
           Chronological conversation with speaker attribution
         </p>
+
+        {/* Audio Controls */}
+        <div className="mt-4 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handleTogglePlayback}
+              className="h-10 w-10 rounded-full bg-primary-blue text-white flex items-center justify-center shadow-sm hover:bg-primary-blue/90 focus:outline-none focus:ring-2 focus:ring-primary-blue"
+              aria-label={isPlaying ? 'Pause audio' : 'Play audio'}
+            >
+              {isPlaying ? <Pause size={18} /> : <Play size={18} />}
+            </button>
+            <div className="flex-1">
+              <div className="flex items-center justify-between text-xs text-gray-500 mb-1">
+                <span>{formatSeconds(currentTime)}</span>
+                <span>{formatSeconds(duration)}</span>
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={duration || 0}
+                step={0.01}
+                value={Number.isFinite(currentTime) ? currentTime : 0}
+                onChange={(event) => handleSeek(Number(event.target.value))}
+                className="w-full accent-primary-blue"
+                aria-label="Audio progress"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Search */}
         <div className="mt-3 relative">
@@ -85,11 +232,14 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
           filteredMessages.map((message, index) => (
             <motion.div
               key={message.message_id}
-              className="bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer"
+              className={cn(
+                'bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer',
+                message.message_id === activeMessageId ? 'border-primary-blue ring-2 ring-primary-blue/30 shadow-md' : ''
+              )}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
-              onClick={() => onMessageClick?.(message)}
+              onClick={() => handleMessageSelection(message)}
             >
               {/* Message Header */}
               <div className="flex items-center gap-3 mb-3">
