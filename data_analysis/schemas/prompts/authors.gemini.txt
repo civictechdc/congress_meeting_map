@@ -1,0 +1,1 @@
+Do a walk through with the transcript, trying to extrapolate author names, knowing that some author_ids might represent multiple people mistakenly. Try to conceptualize Output as jsonld.

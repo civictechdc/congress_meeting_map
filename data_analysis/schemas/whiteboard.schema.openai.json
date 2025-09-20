@@ -1,0 +1,220 @@
+{
+  "name": "whiteboard_clusters_v1",
+  "strict": false,
+  "schema": {
+    "type": "object",
+    "description": "JSON-LD schema for whiteboard or brainstorming notes with idea clusters, serving as a precursor to the full data schema.",
+    "additionalProperties": false,
+    "properties": {
+      "@context": {
+        "type": "object",
+        "description": "Defines the JSON-LD context, mapping terms to IRIs.",
+        "additionalProperties": false,
+        "properties": {
+          "@vocab": {
+            "type": "string",
+            "enum": [
+              "http://schema.org/"
+            ],
+            "description": "The default vocabulary for the JSON-LD context."
+          },
+          "cx": {
+            "type": "string",
+            "enum": [
+              "http://congress.gov/terms#"
+            ],
+            "description": "The prefix for custom terms in the congress.gov namespace."
+          },
+          "Cluster": {
+            "type": "string",
+            "enum": [
+              "http://congress.gov/terms#Cluster"
+            ],
+            "description": "The IRI for the term 'Cluster'."
+          },
+          "Idea": {
+            "type": "string",
+            "enum": [
+              "http://congress.gov/terms#Idea"
+            ],
+            "description": "The IRI for the term 'Idea'."
+          },
+          "Edge": {
+            "type": "string",
+            "enum": [
+              "http://congress.gov/terms#Edge"
+            ],
+            "description": "The IRI for the term 'Edge'."
+          }
+        },
+        "required": [
+          "@vocab",
+          "cx",
+          "Cluster",
+          "Idea",
+          "Edge"
+        ]
+      },
+      "@type": {
+        "type": "string",
+        "description": "The type of the work, typically 'CreativeWork'.",
+        "enum": [
+          "http://schema.org/CreativeWork"
+        ]
+      },
+      "name": {
+        "type": "string",
+        "description": "Title of the creative work or artifact from which the clusters were extracted."
+      },
+      "description": {
+        "type": "string",
+        "description": "Short narrative summary of the whiteboard or brainstorming session."
+      },
+      "about": {
+        "type": "array",
+        "description": "The subject matter of the content.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "@type": {
+              "type": "string",
+              "enum": [
+                "http://schema.org/Thing"
+              ]
+            },
+            "@id": {
+              "type": "string",
+              "description": "A unique cx:slug_like identifier for the topic or subject."
+            },
+            "name": {
+              "type": "string",
+              "description": "Human-readable label for the topic or subject."
+            }
+          },
+          "required": [
+            "@type",
+            "name"
+          ]
+        }
+      },
+      "keywords": {
+        "type": "array",
+        "description": "Tags or free-form keywords associated with the work.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "hasPart": {
+        "type": "array",
+        "description": "An array of thematic clusters that are part of the work.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "@id": {
+              "type": "string",
+              "description": "A unique cx:slug_like identifier for the cluster."
+            },
+            "@type": {
+              "type": "string",
+              "description": "The type of this part, e.g., 'Cluster'.",
+              "enum": [
+                "http://congress.gov/terms#Cluster"
+              ]
+            },
+            "name": {
+              "type": "string",
+              "description": "The name of the thematic cluster."
+            },
+            "description": {
+              "type": "string",
+              "description": "A brief summary of the cluster's content."
+            },
+            "itemListElement": {
+              "type": "array",
+              "description": "A list of key ideas within this cluster.",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "@type": {
+                    "type": "string",
+                    "description": "The type of the item, e.g., 'Idea'.",
+                    "enum": [
+                      "http://congress.gov/terms#Idea"
+                    ]
+                  },
+                  "@id": {
+                    "type": "string",
+                    "description": "A unique cx:slug_like identifier for the idea."
+                  },
+                  "text": {
+                    "type": "string",
+                    "description": "The textual content of the idea."
+                  }
+                },
+                "required": [
+                  "@type",
+                  "@id",
+                  "text"
+                ]
+              }
+            }
+          },
+          "required": [
+            "@id",
+            "@type",
+            "name",
+            "description",
+            "itemListElement"
+          ]
+        }
+      },
+      "cx:edges": {
+        "type": "array",
+        "description": "Defines relationships between different clusters.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "@type": {
+              "type": "string",
+              "description": "The type of the item, e.g., 'Edge'.",
+              "enum": [
+                "http://congress.gov/terms#Edge"
+              ]
+            },
+            "from": {
+              "type": "string",
+              "description": "The ID of the source cluster in the relationship."
+            },
+            "to": {
+              "type": "string",
+              "description": "The ID of the target cluster in the relationship."
+            },
+            "relation": {
+              "type": "string",
+              "description": "Describes the nature of the relationship between the two clusters."
+            }
+          },
+          "required": [
+            "@type",
+            "from",
+            "to",
+            "relation"
+          ]
+        }
+      }
+    },
+    "required": [
+      "@context",
+      "@type",
+      "name",
+      "about",
+      "keywords",
+      "hasPart",
+      "cx:edges"
+    ]
+  }
+}

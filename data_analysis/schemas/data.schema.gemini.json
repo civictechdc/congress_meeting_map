@@ -1,0 +1,394 @@
+{
+    "type": "object",
+    "description": "Schema for a creative work, such as whiteboard notes and a transcript from an event, structured with clusters of ideas, discussion threads, and their relationships.",
+    "properties": {
+        "@context": {
+            "type": "object",
+            "description": "Defines the JSON-LD context, mapping terms to IRIs.",
+            "properties": {
+                "@vocab": {
+                    "type": "string",
+                    "enum": [
+                        "http://schema.org/"
+                    ],
+                    "description": "The default vocabulary for the JSON-LD context."
+                },
+                "cx": {
+                    "type": "string",
+                    "enum": [
+                        "http://congress.gov/terms#"
+                    ],
+                    "description": "The prefix for custom terms in the congress.gov namespace."
+                },
+                "Cluster": {
+                    "type": "string",
+                    "enum": [
+                        "http://congress.gov/terms#Cluster"
+                    ],
+                    "description": "The IRI for the term 'Cluster', a grouping of ideas, topics, or themes and related threads of conversation."
+                },
+                "Idea": {
+                    "type": "string",
+                    "enum": [
+                        "http://congress.gov/terms#Idea"
+                    ],
+                    "description": "The IRI for the term 'Idea', a single thought, concept, or observation expressed in a concise manner."
+                },
+                "Thread": {
+                    "type": "string",
+                    "enum": [
+                        "http://congress.gov/terms#Thread"
+                    ],
+                    "description": "The IRI for the term 'Thread', a conversation or discussion on a specific topic or issue. May contain multiple comments and be a sub-section of a larger conversation."
+                },
+                "Comment": {
+                    "type": "string",
+                    "enum": [
+                        "http://congress.gov/terms#Comment"
+                    ],
+                    "description": "The IRI for the term 'Comment', a single comment expressing an opinion or providing additional information."
+                },
+                "Edge": {
+                    "type": "string",
+                    "enum": [
+                        "http://congress.gov/terms#Edge"
+                    ],
+                    "description": "The IRI for the term 'Edge', a relationship between two clusters."
+                }
+            },
+            "required": [
+                "@vocab",
+                "cx",
+                "Cluster",
+                "Idea",
+                "Thread",
+                "Comment",
+                "Edge"
+            ]
+        },
+        "@type": {
+            "type": "string",
+            "description": "The type of the work, typically 'CreativeWork.'",
+            "enum": [
+                "http://schema.org/CreativeWork"
+            ]
+        },
+        "name": {
+            "type": "string",
+            "description": "The title of the creative work."
+        },
+        "about": {
+            "type": "array",
+            "description": "The subject matter of the content.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "@type": {
+                        "type": "string",
+                        "enum": [
+                            "http://schema.org/Thing"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "description": "A unique cx:slug_like identifier for the topic or subject."
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "@type",
+                    "name"
+                ]
+            }
+        },
+        "keywords": {
+            "type": "array",
+            "description": "The keywords of the work.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "locationCreated": {
+            "type": "object",
+            "description": "The location where the work was created.",
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "enum": [
+                        "http://schema.org/Place"
+                    ]
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@type",
+                "name"
+            ]
+        },
+        "authors": {
+            "type": "array",
+            "description": "The authors of the work.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "@type": {
+                        "type": "string",
+                        "enum": [
+                            "http://schema.org/Person"
+                        ]
+                    },
+                    "@id": {
+                        "type": "string",
+                        "description": "A unique cx:speaker_number:name identifier for the author."
+                    },
+                    "position": {
+                        "type": "integer",
+                        "description": "The speaker number of the person who made the comment."
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "@type",
+                    "@id",
+                    "position",
+                    "name"
+                ]
+            }
+        },
+        "hasPart": {
+            "type": "array",
+            "description": "An array of thematic clusters that are part of the work.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "@id": {
+                        "type": "string",
+                        "description": "A unique cx:slug_like identifier for the cluster."
+                    },
+                    "@type": {
+                        "type": "string",
+                        "description": "The type of this part, e.g., 'Cluster'.",
+                        "enum": [
+                            "http://congress.gov/terms#Cluster"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the thematic cluster."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "A brief summary of the cluster's content."
+                    },
+                    "itemListElement": {
+                        "type": "array",
+                        "description": "A list of key ideas within this cluster.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@type": {
+                                    "type": "string",
+                                    "description": "The type of the item, e.g., 'Idea'.",
+                                    "enum": [
+                                        "http://congress.gov/terms#Idea"
+                                    ]
+                                },
+                                "@id": {
+                                    "type": "string",
+                                    "description": "A unique cx:slug_like identifier for the idea."
+                                },
+                                "text": {
+                                    "type": "string",
+                                    "description": "The textual content of the idea."
+                                }
+                            },
+                            "required": [
+                                "@type",
+                                "@id",
+                                "text"
+                            ]
+                        }
+                    },
+                    "cx:threads": {
+                        "type": "array",
+                        "description": "A list of discussion threads related to the cluster.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@type": {
+                                    "type": "string",
+                                    "description": "The type of the item, e.g., 'Thread'.",
+                                    "enum": [
+                                        "http://congress.gov/terms#Thread"
+                                    ]
+                                },
+                                "@id": {
+                                    "type": "string",
+                                    "description": "A unique cx:slug_like:msg_id-first:msg_id-last identifier for the thread."
+                                },
+                                "ref:idea": {
+                                    "type": "object",
+                                    "description": "A unique cx:slug_like identifier for the idea referenced by the thread.",
+                                    "properties": {
+                                        "@type": {
+                                            "type": "string",
+                                            "enum": [
+                                                "http://congress.gov/terms#Idea"
+                                            ]
+                                        },
+                                        "@id": {
+                                            "type": "string",
+                                            "description": "A unique cx:slug_like identifier for the idea."
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "description": "The topic of the idea."
+                                        }
+                                    },
+                                    "required": [
+                                        "@type",
+                                        "@id",
+                                        "name"
+                                    ]
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "The topic of the discussion thread."
+                                },
+                                "summary": {
+                                    "type": "string",
+                                    "description": "A brief summary of the discussion thread."
+                                },
+                                "cx:comments": {
+                                    "type": "array",
+                                    "description": "A list of comments within the thread.",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "@type": {
+                                                "type": "string",
+                                                "description": "The type of the item, e.g., 'Comment'.",
+                                                "enum": [
+                                                    "http://congress.gov/terms#Comment"
+                                                ]
+                                            },
+                                            "@id": {
+                                                "type": "string",
+                                                "description": "A unique slug-like identifier for the comment."
+                                            },
+                                            "startTime": {
+                                                "type": "string",
+                                                "description": "The timestamp indicating when the comment was made."
+                                            },
+                                            "text": {
+                                                "type": "string",
+                                                "description": "The content of the comment."
+                                            },
+                                            "author": {
+                                                "type": "string",
+                                                "description": "The speaker number of the person who made the comment."
+                                            }
+                                        },
+                                        "required": [
+                                            "@type",
+                                            "@id",
+                                            "startTime",
+                                            "text",
+                                            "author"
+                                        ]
+                                    }
+                                }
+                            },
+                            "required": [
+                                "@type",
+                                "@id",
+                                "name",
+                                "summary",
+                                "ref:idea",
+                                "cx:comments"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "@id",
+                    "@type",
+                    "name",
+                    "description",
+                    "itemListElement",
+                    "cx:threads"
+                ]
+            }
+        },
+        "cx:edges": {
+            "type": "array",
+            "description": "Defines relationships between different clusters.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "@type": {
+                        "type": "string",
+                        "description": "The type of the item, e.g., 'edge'.",
+                        "enum": [
+                            "http://congress.gov/terms#edge"
+                        ]
+                    },
+                    "from": {
+                        "type": "string",
+                        "description": "The ID of the source cluster in the relationship."
+                    },
+                    "to": {
+                        "type": "string",
+                        "description": "The ID of the target cluster in the relationship."
+                    },
+                    "relation": {
+                        "type": "string",
+                        "description": "Describes the nature of the relationship between the two clusters."
+                    }
+                },
+                "required": [
+                    "@type",
+                    "from",
+                    "to",
+                    "relation"
+                ]
+            }
+        },
+        "isPartOf": {
+            "type": "object",
+            "description": "The larger event or collection to which this work belongs.",
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "enum": [
+                        "http://schema.org/Event"
+                    ]
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@type",
+                "name"
+            ]
+        }
+    },
+    "required": [
+        "@context",
+        "@type",
+        "keywords",
+        "name",
+        "about",
+        "locationCreated",
+        "hasPart",
+        "cx:edges",
+        "isPartOf"
+    ]
+}

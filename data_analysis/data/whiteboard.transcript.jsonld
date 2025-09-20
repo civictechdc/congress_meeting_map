@@ -1,0 +1,761 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "cx": "http://congress.gov/terms#",
+        "Cluster": "http://congress.gov/terms#Cluster",
+        "Idea": "http://congress.gov/terms#Idea",
+        "Edge": "http://congress.gov/terms#Edge"
+    },
+    "@type": "http://schema.org/CreativeWork",
+    "name": "Committee Modernization Discussion (committee-modernization-discussion-1)",
+    "description": "Breakout discussion on modernizing House committees spanning appropriations intake, hearings reform, witness management, data standards/interoperability, transparency/oversight, staff capacity, public feedback mechanisms, joint hearings for MRA budgeting, and committee memory. Participants identified concrete pain points, proposed tooling and process changes, and emphasized capacity constraints as a cross-cutting blocker.",
+    "about": [
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-appropriations-process",
+            "name": "Appropriations Process"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-member-appropriation-portal",
+            "name": "Member Appropriation Portal"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-hearings-modernization",
+            "name": "Hearings Modernization and Goals"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-witness-management",
+            "name": "Witness Management and Identification"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-data-standards",
+            "name": "Data Standards and Structured Reporting"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-uslm",
+            "name": "USLM Modeling for Reports and Prints"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-csv-open-data",
+            "name": "CSV/Open Data Publishing Practices"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-unique-identifiers",
+            "name": "Unique Identifiers (Witnesses, Accounts, Entities)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-accounts-taxonomy-alignment",
+            "name": "Accounts Taxonomy Alignment (Treasury/OMB/Agencies)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-transparency-oversight",
+            "name": "Transparency, Oversight, and Monitoring Democracy"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-community-monitoring",
+            "name": "Community-Level Impact Monitoring (Projects and Spending)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-staff-capacity",
+            "name": "Staff Capacity and Institutional Resourcing"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-legislative-branch-funding",
+            "name": "Legislative Branch Funding Levels (MRA and Beyond)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-mra-budget-process",
+            "name": "MRA Budget Process and Planning"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-joint-hearings",
+            "name": "Joint Hearings and Shared Jurisdiction Coordination"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-public-feedback",
+            "name": "Public Feedback, Petitions, and Expert Input Channels"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-petition-platforms",
+            "name": "Petition Platforms and Threshold-Triggered Actions"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-case-compass",
+            "name": "Case Compass (Aggregated Constituent Casework Signals)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-expert-input-channels",
+            "name": "Direct Channels for Expert Submissions to Committees"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-committee-memory",
+            "name": "Committee Memory and Historical Context"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-knowledge-management",
+            "name": "Knowledge Management Across Congresses and Hearings"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-regulations-gov",
+            "name": "Regulations.gov Comments and Aggregation"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-qr-codes-recovery-act",
+            "name": "QR Codes and Recovery.gov Model for Project Transparency"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-chips-act",
+            "name": "CHIPS Act Community Visibility"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-accessibility-screen-readers",
+            "name": "Digital Accessibility (Screen Readers, Accessible Formats)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-interoperability-internal-systems",
+            "name": "Interoperability of Internal Congressional Systems"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-open-access-research",
+            "name": "Open Access to Federally Funded Research Outputs"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-field-hearings",
+            "name": "Field Hearings (Value, Cost, Frequency)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-hearing-metadata",
+            "name": "Hearing Metadata, Issue Tags, and Jurisdiction Labels"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-qfr-linkage",
+            "name": "Linkage Between QFRs, Hearings, and Follow-ups"
+        }
+    ],
+    "keywords": [
+        "Appropriations",
+        "Member Portal",
+        "MRA",
+        "Joint Hearings",
+        "Hearings Modernization",
+        "Witness Registry",
+        "Unique Identifiers",
+        "CSV",
+        "USLM",
+        "Open Data",
+        "Data Interoperability",
+        "Taxonomy Alignment",
+        "Transparency",
+        "QR Codes",
+        "Recovery.gov",
+        "CHIPS Act",
+        "Oversight",
+        "Screen Reader Accessibility",
+        "Staff Capacity",
+        "Legislative Branch Funding",
+        "Public Feedback",
+        "Petition Platforms",
+        "Case Compass",
+        "Expert Channels",
+        "Committee Memory",
+        "Knowledge Management",
+        "Regulations.gov",
+        "Ideation Tools",
+        "Crowdsourcing",
+        "Field Hearings",
+        "Searchable Hearing History",
+        "QFR Linkage"
+    ],
+    "hasPart": [
+        {
+            "@id": "cx:cluster-appropriations-intake",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Appropriations Intake and Process Modernization",
+            "description": "Standardizing and streamlining the request intake process from constituents to members to the Appropriations portal; timing constraints; form consistency; interoperability with committee systems.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-approp-portal-inefficiencies",
+                    "text": "Member appropriation portal has inefficiencies and delays, complicating support for local programs (late openings, compressed timelines)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-late-presidents-budget",
+                    "text": "Late release of the President’s budget compresses the appropriations request window; members submit without full budget context."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-inconsistent-opening-times",
+                    "text": "Every member office opens request windows at different times; discoverability requires email/phone outreach."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-form-inconsistency",
+                    "text": "Forms differ subtly by office (e.g., dropdown vs free text for same field), creating a time tax for intermediaries spanning multiple districts."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-standardized-intake",
+                    "text": "Create a standardized intake process to gather constituent data that can push to the member portal and other official systems via APIs."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-general-feedback-portal",
+                    "text": "A general House feedback portal could capture ideas and route them into appropriations requests (supporting individuals and regional coalitions)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-duplicate-data-entry",
+                    "text": "Committees use multiple internal systems that do not communicate, forcing staff to re-enter the same numbers and increasing error risk."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-developer-multi-destination-form",
+                    "text": "Member websites could host forms that programmatically push data to multiple official repositories to reduce staff effort and errors."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-email-overload-appropriations",
+                    "text": "Despite web forms, many appropriations requests arrive by email, overwhelming inboxes and hampering triage/filtering."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-coalition-requests",
+                    "text": "Intermediaries (e.g., transit authorities, multi-district non-profits) face disproportionate burdens navigating heterogeneous member processes."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-ideation-for-appropriations",
+                    "text": "Use ideation tools to crowdsource district needs for appropriations; community up/downvote to prioritize proposals."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-account-naming-nightmare",
+                    "text": "Misaligned account names across Treasury/OMB/agencies complicate linking appropriations requests to official accounts (lack of unique IDs)."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-hearings-modernization",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Hearings Modernization: Goals, Formats, and Metadata",
+            "description": "Redefining hearing goals beyond performative elements; experimenting with formats; integrating constituent input; and adding structured metadata for discovery.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-hearing-goal-clarity",
+                    "text": "Clarify the primary goal of hearings (learn from experts for legislation/oversight vs. performative statements) to drive format choices."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-staff-led-discussion",
+                    "text": "Pilot extended staff-led discussions (e.g., 30 minutes) focusing on trade-offs, complementing shorter member rounds."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-constituent-questions",
+                    "text": "Collect and incorporate constituent-submitted questions to guide witness Q&A and increase relevance."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-experiment-hearing-styles",
+                    "text": "Experiment with varied hearing styles beyond current formats to promote substantive dialogue (learn from Modernization Committee pilots)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-hearing-tags",
+                    "text": "Tag/categorize hearings by issue area and committee jurisdiction to enable programmatic discovery for staffers and the public."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-iterative-conversation",
+                    "text": "Treat a hearing as one node in an iterative, multi-year conversation that includes hearings, CRS reports, QFRs, and floor speeches."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-search-engine-topic",
+                    "text": "Provide a topic-centric search engine that connects hearings, testimonies, QFRs, and follow-ups across Congresses."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-qfr-linkage",
+                    "text": "Link questions for the record (QFRs) back to the originating hearing moments and track responses and follow-up threads."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-less-performative",
+                    "text": "Reduce performative incentives (e.g., social media clips) by designing formats that prioritize learning and problem-solving."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-targeted-calls-evidence",
+                    "text": "Use targeted calls for evidence (UK model) ahead of hearings to gather scoped public/expert input on upcoming topics."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-question-ranking",
+                    "text": "Enable constituents to submit and rank prospective hearing questions to generate a data-informed top list for staff."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-defined-exceptions",
+                    "text": "Recognize committees with well-defined hearing purposes (e.g., Rules, Appropriations) while modernizing others' practices."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-witness-management",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Witness Management, Discovery, and Identifiers",
+            "description": "Creating a centralized, data-driven approach to witness discovery, tracking, scheduling, and intake; defining unique identifiers and cross-committee visibility.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-witness-central-registry",
+                    "text": "Establish a centralized witness registry with unique identifiers to track appearances across committees and Congresses, including org changes."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-witness-source-of-truth",
+                    "text": "Build a cohesive scheduler as a single source of truth for witnesses: availability, prioritization, and transparency across committees."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-witness-intake-portal",
+                    "text": "Create a standardized intake portal for non-subpoenaed witnesses (aligned with or built on the witness disclosure form) to replace ad hoc email chains."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-cross-committee-visibility",
+                    "text": "Provide cross-committee visibility into 'frequent flyer' witnesses and prior testimony content to avoid siloed networks and improve diversity of perspectives."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-selection-aligned-narrative",
+                    "text": "Witness selection should begin with the chair/ranking narrative goal for the hearing, ensuring invited experts align with or constructively challenge that story arc."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-dmv-constraint",
+                    "text": "Logistical constraints (travel cost/time, loss of virtual hearings) skew the witness pool toward those in the DMV area or with means to attend."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-vetting-pipeline",
+                    "text": "Formalize a vetting pipeline pulling from subject-matter expert networks, alumni, and casework-derived lived-experience witnesses."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-expert-history-tracking",
+                    "text": "Enable choosing a witness and instantly viewing all hearings, testimonies, QFRs, and positions associated with that individual across time."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-availability-transparency",
+                    "text": "Expose non-sensitive availability data to reduce last-minute cancellations and improve scheduling predictability for staff and witnesses."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-casework-sourcing",
+                    "text": "Leverage Case Compass and constituent casework to surface potential witnesses with lived experience relevant to oversight topics."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-data-standards",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Data Standards, Structured Reports, and Interoperability",
+            "description": "Moving from PDFs and unstructured outputs to machine-readable data (CSV, USLM), aligning taxonomies, enabling system interoperability, and improving accessibility.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-pdf-to-data",
+                    "text": "Appropriations report tables are often images of ASCII tables in PDFs; publish underlying data as CSV to enable reuse without ML extraction."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-uslm-roadmap",
+                    "text": "Collaborate with GPO to model report data in USLM; short-term: post CSVs alongside PDFs; long-term: fully structured, linked legislative data."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-accessibility",
+                    "text": "Structured data and accessible formats directly improve screen reader accessibility and compliance with digital access standards."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-accounts-ids",
+                    "text": "Align account naming across Treasury, OMB, and agencies by introducing persistent unique identifiers; reduce manual overwrites/mapping."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-systems-interop",
+                    "text": "Ensure internal committee systems interoperate via shared vocabularies and APIs to eliminate duplicative data entry and reduce errors."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-structured-appropriations-effort",
+                    "text": "Advance ongoing efforts to structure appropriations data; progress slowed by competing priorities and limited staff capacity."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-hearing-metadata-standards",
+                    "text": "Define and apply a common metadata schema for hearings (issue tags, jurisdiction, related bills, witnesses, QFR links) to power search and analysis."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-expert-identifier",
+                    "text": "Create persistent identifiers for witnesses/experts to support cross-committee analytics and longitudinal research on expert influence and reuse."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-data-publishing-workflow",
+                    "text": "Establish lightweight workflows and approvals for posting companion CSVs and machine-readable annexes to committee prints and reports."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-comment-aggregation",
+                    "text": "Develop tools to aggregate and cluster public comments (e.g., from regulations.gov) and surface evolving idea threads across dockets."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-open-research-access",
+                    "text": "Ensure federally funded research outputs are accessible to Congress and the public, eliminating paywall barriers to evidence use."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-transparency-oversight",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Transparency, Oversight, and Community Monitoring",
+            "description": "Giving constituents clear visibility into funded projects, outcomes, and member positions; leveraging technology to monitor democratic outputs locally.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-project-qr-codes",
+                    "text": "Adopt Recovery Act-style project QR codes/signage linking to official pages with funding, status, and outcomes (e.g., for infrastructure, CHIPS)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-community-visibility",
+                    "text": "Provide community-level dashboards so people can see what’s happening locally as a result of major laws (e.g., CHIPS Act)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-link-votes-to-projects",
+                    "text": "Link member votes to funded projects/outcomes so constituents can see who supported or opposed and why (with space for justification)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-oversight-improvement",
+                    "text": "Improve monitoring and oversight pipelines so district-level impacts of funded legislation are visible and searchable by constituents."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-honesty-and-credit",
+                    "text": "Address perceived gaps in honesty/credit-claiming by making vote and outcome linkages transparent and easy to verify publicly."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-staff-capacity",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Staff Capacity, Funding, and Implementation",
+            "description": "Recognizing under-resourcing as a root cause of many modernization challenges; aligning MRA and tools/funding to enable sustained improvements.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-under-resourced",
+                    "text": "Congress is under-resourced relative to responsibilities; staff often cover multiple roles with small teams and limited tech budgets."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-capacity-blocker",
+                    "text": "Lack of capacity prevents systematic tasks like CSV publishing, metadata tagging, and maintaining witness registries from happening consistently."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-double-leg-branch-funding",
+                    "text": "Top-line proposal: significantly increase Legislative Branch funding (e.g., 'cost of a stealth bomber') to meet oversight and legislative needs."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-mra-link",
+                    "text": "Capacity constraints tie directly to the MRA budget process; better planning and right-sized budgets would mitigate staff overload."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-implementation-funding",
+                    "text": "Tooling and modernization (intake portals, schedulers, data pipelines) require dedicated funding, staffing, and maintenance commitments."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-public-feedback",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Public Feedback, Petitions, and Expert Engagement",
+            "description": "Designing channels for constituents and experts to contribute meaningfully to hearings and legislation; balancing targeted calls with always-on portals; leveraging crowdsourcing tools.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-petition-platforms",
+                    "text": "Adopt petition/participation platforms with clear thresholds that trigger concrete actions, learning from international parliaments’ practices."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-capacity-vs-power",
+                    "text": "Barrier to feedback loops is often capacity rather than unwillingness to cede agenda-setting; staff time limits dampen innovation."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-targeted-rfis",
+                    "text": "Publish targeted requests for information on upcoming hearing topics to solicit scoped input from experts and the public (UK model)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-expert-training-channel",
+                    "text": "Provide training and a clear channel for experts to submit analyses directly to committees instead of ad hoc emailing individual staffers."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-ideation-portals",
+                    "text": "Use ideation tools to crowdsource appropriations ideas and hearing questions; allow community voting to surface top items with minimal staff processing."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-case-compass-signal",
+                    "text": "Leverage Case Compass to surface anonymized, aggregated demand signals (e.g., spikes in infrastructure or VA issues) for committees and hearings planning."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-public-comment-clustering",
+                    "text": "Aggregate and cluster public comments (e.g., regulations.gov) to allow idea refinement and community co-creation over time, not just raw counts."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-field-hearings",
+                    "text": "Field hearings provide valuable constituent contact but are costly and infrequent; virtual or hybrid options could broaden reach if allowed/funded."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-joint-hearings-mra",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Joint Hearings and MRA Budget Coordination",
+            "description": "Using joint hearings and shared jurisdiction tools to align data and decisions early, especially for the MRA budget process.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-joint-cha-legbranch",
+                    "text": "Hold joint hearings between Legislative Branch Appropriations and CHA to align on MRA needs using real data early in the cycle."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-build-to-right-number",
+                    "text": "Plan toward an evidence-based MRA number from the start rather than backtracking to a predetermined figure at year-end."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-shared-jurisdiction",
+                    "text": "Leverage House rules permitting joint work for shared jurisdiction to reduce duplication and improve coordination."
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-committee-memory",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Committee Memory, Histories, and Strategic Planning",
+            "description": "Recovering and maintaining committee histories, making iterative work discoverable, and developing substantive plans and retrospectives.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-committee-histories",
+                    "text": "Commission and maintain up-to-date committee histories; many comprehensive accounts are decades old (e.g., Rules last major history in 1982)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-substantive-reports",
+                    "text": "Go beyond pro forma biannual activity reports to produce periodic, substantive analyses of committee processes and outcomes."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-mini-strategic-plans",
+                    "text": "Create mini strategic plans each Congress that define mission, priorities, and metrics—and report on execution meaningfully."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-onboarding-context",
+                    "text": "Provide new staffers/members with accessible context: what the committee has done, how it changed, and where to find relevant archives."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-iterative-archives",
+                    "text": "Preserve the multi-year 'river' of conversation by connecting hearings, reports, QFRs, and floor debates in a cohesive knowledge graph."
+                }
+            ]
+        }
+    ],
+    "cx:edges": [
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-data-standards",
+            "relation": "Capacity constraints impede CSV/USLM publishing, identifier assignment, and metadata maintenance."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Limited staff time drives inconsistent processes, last-minute submissions, and copy-paste workflows."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Under-resourcing nudges hearings toward performative formats over experimentation and deep inquiry."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-public-feedback",
+            "relation": "Sustaining feedback portals and reviewing inputs requires staff capacity and tooling support."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-witness-management",
+            "relation": "No centralized witness IDs/schedulers exist largely due to capacity and maintenance constraints."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-committee-memory",
+            "relation": "Underfunding hampers production of substantive committee histories and retrospectives."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Publishing community-level project tracking and vote linkages requires resources currently in short supply."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-joint-hearings-mra",
+            "relation": "Joint planning can reduce rework and improve utilization of scarce staff resources across related committees."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Shared taxonomies, identifiers, and APIs enable standardized intake and reduce duplicate data entry."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Structured data and linked accounts allow community dashboards and project QR codes to display accurate, timely information."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Hearing metadata and cross-year linkage (QFRs, testimonies) depend on common schemas and persistent identifiers."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-witness-management",
+            "relation": "Unique witness identifiers and cross-committee tracking require agreed data standards and interoperable systems."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Constituent-submitted and ranked questions, and targeted calls for evidence, inform hearing agendas and Q&A."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "A general feedback portal and ideation tools can route community priorities into appropriations pipelines."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-witness-management",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Better discovery, availability tracking, and intake improve witness diversity and the substantive value of hearings."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-committee-memory",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Historical context and connected archives help define hearing goals and avoid duplicating past work."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-joint-hearings-mra",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Early, joint MRA planning informs downstream intake processes and reduces end-of-year backtracking."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-transparency-oversight",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Monitoring outcomes of funded projects feeds evidence back into future appropriations priorities."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-transparency-oversight",
+            "to": "cx:cluster-public-feedback",
+            "relation": "Greater visibility into local impacts catalyzes informed public input and oversight participation."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-committee-memory",
+            "to": "cx:cluster-data-standards",
+            "relation": "Sustained committee memory benefits from standardized, linked data across hearings, reports, and QFRs (USLM, CSVs)."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-witness-management",
+            "relation": "Signals from Case Compass and public submissions can surface potential witnesses with lived experience or expertise."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-hearings-modernization",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Shifting hearings toward learning and oversight improves public trust and the transparency of legislative work."
+        }
+    ]
+}

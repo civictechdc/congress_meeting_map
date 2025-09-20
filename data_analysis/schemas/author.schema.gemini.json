@@ -1,0 +1,87 @@
+{
+    "description": "A schema that maps resolved speaker identities and corrects mistaken attributions for a given conversation, without including the transcript messages.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "SpeakerIdentityMap"
+            ]
+        },
+        "conversation_id": {
+            "type": "string",
+            "description": "A unique slug-like identifier for the entire conversation this analysis applies to."
+        },
+        "identifiedSpeakers": {
+            "type": "array",
+            "description": "A list of individuals who have been confidently identified as speakers.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The verified, canonical name of the speaker."
+                    },
+                    "primaryId": {
+                        "type": "string",
+                        "description": "(Optional) The primary, canonical identifier for this speaker."
+                    },
+                    "aliases": {
+                        "type": "array",
+                        "description": "A list of other identifiers or names also confirmed to belong to this speaker.",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "mistakenAttributions": {
+                        "type": "array",
+                        "description": "A record of other speaker IDs that were incorrectly attributed to this person, along with the message contexts.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "incorrectId": {
+                                    "type": "string",
+                                    "description": "The speaker ID that was mistakenly used."
+                                },
+                                "messageIds": {
+                                    "type": "array",
+                                    "description": "A list of unique message identifiers where the incorrect attribution occurred.",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "incorrectId",
+                                "messageIds"
+                            ],
+                            "propertyOrdering": [
+                                "incorrectId",
+                                "messageIds"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "name"
+                ],
+                "propertyOrdering": [
+                    "name",
+                    "primaryId",
+                    "aliases",
+                    "mistakenAttributions"
+                ]
+            }
+        }
+    },
+    "required": [
+        "type",
+        "conversation_id",
+        "identifiedSpeakers"
+    ],
+    "propertyOrdering": [
+        "type",
+        "conversation_id",
+        "identifiedSpeakers"
+    ]
+}

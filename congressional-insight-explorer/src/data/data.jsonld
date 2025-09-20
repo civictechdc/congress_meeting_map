@@ -1,0 +1,2314 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "cx": "http://congress.gov/terms#",
+        "Cluster": "http://congress.gov/terms#Cluster",
+        "Idea": "http://congress.gov/terms#Idea",
+        "Thread": "http://congress.gov/terms#Thread",
+        "Comment": "http://congress.gov/terms#Comment",
+        "Edge": "http://congress.gov/terms#Edge"
+    },
+    "@type": "http://schema.org/CreativeWork",
+    "name": "Committee Modernization Discussion (committee-modernization-discussion-1)",
+    "description": "Merged synthesis of the transcript and whiteboard notes on modernizing House committee work. Themes include appropriations intake, hearings reform, witness management, data standards/metadata and accessible outputs, transparency and oversight, staff capacity and funding, public feedback channels, joint hearings and MRA budgeting, and preservation of committee memory.",
+    "about": [
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-appropriations-process",
+            "name": "Appropriations Process"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-member-appropriation-portal",
+            "name": "Member Appropriation Portal"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-hearings-modernization",
+            "name": "Hearings Modernization and Goals"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-witness-management",
+            "name": "Witness Management and Identification"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-data-standards",
+            "name": "Data Standards and Structured Reporting"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-uslm",
+            "name": "USLM Modeling for Reports and Prints"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-csv-open-data",
+            "name": "CSV/Open Data Publishing Practices"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-unique-identifiers",
+            "name": "Unique Identifiers (Witnesses, Accounts, Entities)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-accounts-taxonomy-alignment",
+            "name": "Accounts Taxonomy Alignment (Treasury/OMB/Agencies)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-transparency-oversight",
+            "name": "Transparency, Oversight, and Monitoring Democracy"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-community-monitoring",
+            "name": "Community-Level Impact Monitoring (Projects and Spending)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-staff-capacity",
+            "name": "Staff Capacity and Institutional Resourcing"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-legislative-branch-funding",
+            "name": "Legislative Branch Funding Levels (MRA and Beyond)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-mra-budget-process",
+            "name": "MRA Budget Process and Planning"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-joint-hearings",
+            "name": "Joint Hearings and Shared Jurisdiction Coordination"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-public-feedback",
+            "name": "Public Feedback, Petitions, and Expert Input Channels"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-petition-platforms",
+            "name": "Petition Platforms and Threshold-Triggered Actions"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-case-compass",
+            "name": "Case Compass (Aggregated Constituent Casework Signals)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-expert-input-channels",
+            "name": "Direct Channels for Expert Submissions to Committees"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-committee-memory",
+            "name": "Committee Memory and Historical Context"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-knowledge-management",
+            "name": "Knowledge Management Across Congresses and Hearings"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-regulations-gov",
+            "name": "Regulations.gov Comments and Aggregation"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-qr-codes-recovery-act",
+            "name": "QR Codes and Recovery.gov Model for Project Transparency"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-chips-act",
+            "name": "CHIPS Act Community Visibility"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-accessibility-screen-readers",
+            "name": "Digital Accessibility (Screen Readers, Accessible Formats)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-interoperability-internal-systems",
+            "name": "Interoperability of Internal Congressional Systems"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-open-access-research",
+            "name": "Open Access to Federally Funded Research Outputs"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-field-hearings",
+            "name": "Field Hearings (Value, Cost, Frequency)"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-hearing-metadata",
+            "name": "Hearing Metadata, Issue Tags, and Jurisdiction Labels"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-qfr-linkage",
+            "name": "Linkage Between QFRs, Hearings, and Follow-ups"
+        },
+        {
+            "@type": "http://schema.org/Thing",
+            "@id": "cx:topic-committee-outputs",
+            "name": "Committee Outputs and Reporting"
+        }
+    ],
+    "keywords": [
+        "Appropriations",
+        "Member Portal",
+        "MRA",
+        "Joint Hearings",
+        "Hearings Modernization",
+        "Witness Registry",
+        "Unique Identifiers",
+        "CSV",
+        "USLM",
+        "Open Data",
+        "Data Interoperability",
+        "Taxonomy Alignment",
+        "Transparency",
+        "QR Codes",
+        "Recovery.gov",
+        "CHIPS Act",
+        "Oversight",
+        "Screen Reader Accessibility",
+        "Staff Capacity",
+        "Legislative Branch Funding",
+        "Public Feedback",
+        "Petition Platforms",
+        "Case Compass",
+        "Expert Channels",
+        "Committee Memory",
+        "Knowledge Management",
+        "Regulations.gov",
+        "Ideation Tools",
+        "Crowdsourcing",
+        "Field Hearings",
+        "Searchable Hearing History",
+        "QFR Linkage",
+        "Witness Scheduling",
+        "Intake Process",
+        "Metadata",
+        "Issue Tags",
+        "Discoverability",
+        "Committee Print",
+        "Committee History",
+        "Monitoring",
+        "Shared Jurisdiction",
+        "MRA Budget Process",
+        "Reports",
+        "PDF",
+        "Innovation",
+        "Budget Release",
+        "As-Is Process",
+        "Standardize",
+        "Committee Outputs",
+        "SME Communication",
+        "Timelines"
+    ],
+    "authors": [
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-1:Moderator",
+            "position": 1,
+            "name": "Moderator (Speaker 1)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-2:Jennifer-Hernandez",
+            "position": 2,
+            "name": "Jennifer Hernandez"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-3:Unknown",
+            "position": 3,
+            "name": "Speaker 3 (Unknown)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-4:Unknown",
+            "position": 4,
+            "name": "Speaker 4 (Unknown)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-5:Omarawan",
+            "position": 5,
+            "name": "Omarawan (Founder, Hill Climbers)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-6:Unknown",
+            "position": 6,
+            "name": "Speaker 6 (Unknown)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-7:Daniel",
+            "position": 7,
+            "name": "Daniel"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-8:Tyler-Clinton",
+            "position": 8,
+            "name": "Tyler Clinton"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-10:Unknown",
+            "position": 10,
+            "name": "Speaker 10 (Unknown)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-Nathan:Nathan",
+            "name": "Nathan"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-Mike:Mike",
+            "name": "Mike (CTDC)"
+        },
+        {
+            "@type": "http://schema.org/Person",
+            "@id": "cx:speaker-JD:JD",
+            "name": "JD"
+        }
+    ],
+    "hasPart": [
+        {
+            "@id": "cx:cluster-appropriations-intake",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Appropriations Intake and Process Modernization",
+            "description": "Standardize and streamline the path Public → Member → Appropriations; align timelines with the President’s budget; reduce duplicative entry; and interoperate with committee systems.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-approp-portal-inefficiencies",
+                    "text": "Member appropriation portal has inefficiencies and delays, complicating support for local programs (late openings, compressed timelines)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-late-presidents-budget",
+                    "text": "Late release of the President’s budget compresses the appropriations request window; members submit without full budget context."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-inconsistent-opening-times",
+                    "text": "Every member office opens request windows at different times; discoverability requires email/phone outreach."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-form-inconsistency",
+                    "text": "Forms differ subtly by office (e.g., dropdown vs free text for same field), creating a time tax for intermediaries spanning multiple districts."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-standardized-intake",
+                    "text": "Create a standardized intake process to gather constituent data that can push to the member portal and other official systems via APIs."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-general-feedback-portal",
+                    "text": "A general House feedback portal could capture ideas and route them into appropriations requests (supporting individuals and regional coalitions)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-duplicate-data-entry",
+                    "text": "Committees use multiple internal systems that do not communicate, forcing staff to re-enter the same numbers and increasing error risk."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-developer-multi-destination-form",
+                    "text": "Member websites could host forms that programmatically push data to multiple official repositories to reduce staff effort and errors."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-email-overload-appropriations",
+                    "text": "Despite web forms, many appropriations requests arrive by email, overwhelming inboxes and hampering triage/filtering."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-coalition-requests",
+                    "text": "Intermediaries (e.g., transit authorities, multi-district non-profits) face disproportionate burdens navigating heterogeneous member processes."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-ideation-for-appropriations",
+                    "text": "Use ideation tools to crowdsource district needs for appropriations; community up/downvote to prioritize proposals."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-account-naming-nightmare",
+                    "text": "Misaligned account names across Treasury/OMB/agencies complicate linking appropriations requests to official accounts (lack of unique IDs)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-publish-appropriations-timeline",
+                    "text": "Publish clear, coordinated request timelines across member offices; align openings/closings with the President’s budget release."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-as-is-process-mapping",
+                    "text": "Map and document the current 'as-is' appropriations intake flow to surface bottlenecks and standardization targets."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-public-member-committee-flow",
+                    "text": "Make the Public → Member → Appropriations Committee pathway transparent and trackable for requesters."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:approp-window-compression:msg2:msg112",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-late-presidents-budget",
+                        "name": "Late President’s budget compresses request windows"
+                    },
+                    "name": "Portal timing and compressed windows",
+                    "summary": "Late budget releases and portal timing issues compress the appropriations request window and create inefficiencies for communities.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-2",
+                            "startTime": "00:10",
+                            "text": "I'm Jennifer Hernandez. I want to discuss the appropriations process, specifically from the community perspective. We understand that members support programs in their jurisdictions through a member appropriation portal, but it seems there are some inefficiencies or delays in that process that I'm curious to hear about.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-110",
+                            "startTime": "31:53",
+                            "text": "That becomes tricky every year. In theory, we would get the President's budget and then open the portal, but it has been presented late in recent years.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-112",
+                            "startTime": "32:16",
+                            "text": "This creates a strange situation where members submit requests without knowing what the budget is. The whole schedule gets compressed where we're waiting and then suddenly have to go into appropriation season, opening the portal and completing the process in a matter of weeks.",
+                            "author": "speaker-2"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:approp-inconsistent-openings:msg106:msg117",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-inconsistent-opening-times",
+                        "name": "Inconsistent member office request windows"
+                    },
+                    "name": "Inconsistent opening times and form variations",
+                    "summary": "Member offices open request windows at different times and use inconsistent forms, imposing a time tax on intermediaries and coalitions.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-106",
+                            "startTime": "31:43",
+                            "text": "How do you even find out when member offices are opening up to receive appropriation requests? Every member office does it at a different time.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-113",
+                            "startTime": "32:49",
+                            "text": "Even members on the same Appropriations subcommittee will start taking requests at different times. You have to find out by email or by calling them. Then all of their forms are subtly different, which is a lot of fun.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-114",
+                            "startTime": "33:30",
+                            "text": "You don't know what the form is going to look like until you see it. One will ask you to say the same thing, but use a dropdown; another will have you fill in the field.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-115",
+                            "startTime": "33:45",
+                            "text": "Is that really a constituent intake issue, though? I understand why someone in D.C. communicating with seven members of a subcommittee would care, but a constituent is just reaching out to their one member.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-116",
+                            "startTime": "34:08",
+                            "text": "It depends. If you want to build a bridge across five districts and you represent the transit authority, you're dealing with multiple members. It's the same for a community service group like Meals on Wheels that provides services in all of the districts and communicates with all of the appropriators.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-117",
+                            "startTime": "34:38",
+                            "text": "It's usually an intermediary—an association or a non-profit—doing this in multiple places, and the inconsistent process is a time tax. If you represent a large corporation, you can do it, but if you're a small non-profit, it's harder.",
+                            "author": "speaker-7"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:approp-standardized-intake:msg101:msg136",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-standardized-intake",
+                        "name": "Standardized intake and API-based data flow"
+                    },
+                    "name": "Standardized constituent intake and system interoperability",
+                    "summary": "Create a standardized intake pipeline and interoperable systems so member sites can push data to official repositories, reducing duplicative entry and errors.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-101",
+                            "startTime": "29:58",
+                            "text": "As I'm listening, it seems there's a need for a standardized intake process to get data from constituents, which could then be pushed from member offices into the member portal we work on. I would find that a useful idea to explore.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-102",
+                            "startTime": "30:39",
+                            "text": "Also, committees use multiple internal systems that are not communicating with each other, which requires staff to enter the same numbers in different places. A key part of modernization is making sure our systems can communicate and transfer information easily to reduce human error.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-133",
+                            "startTime": "39:45",
+                            "text": "So there is a need to make it easier for information to flow from committee to committee or from institution to institution, so we can ingest it and then export or share it.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-135",
+                            "startTime": "40:19",
+                            "text": "The Appropriations Committee is not involved in that process at all. Every member has the ability to do the process whichever way they choose.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-136",
+                            "startTime": "40:30",
+                            "text": "As a developer, it's always better when someone else has done some work ahead of time and I can just push data to an official place rather than having to build the rest of the stack. You can easily have a form on a member's website that sends data to multiple places if needed.",
+                            "author": "speaker-8"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:approp-ideation:msg128:msg182",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-ideation-for-appropriations",
+                        "name": "Crowdsource appropriations ideas via ideation portals"
+                    },
+                    "name": "General feedback and ideation portals feeding appropriations",
+                    "summary": "Develop a House-wide feedback portal and ideation tools to capture community proposals and route them into appropriations and hearing planning.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-128",
+                            "startTime": "36:30",
+                            "text": "I'm thinking about whether Congress needs a general feedback portal. Ideas could bubble up from there into appropriation requests. This could standardize the process for individual constituents and also accommodate the regional representatives working on coalition projects.",
+                            "author": "speaker-1"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-179",
+                            "startTime": "51:43",
+                            "text": "I'd like to propose using ideation tools to help with appropriations, staff capacity, and feedback. It crowdsources the work to constituents. For example, you could ask people in a district for their ideas for the next appropriation, and they could submit and upvote or downvote ideas.",
+                            "author": "speaker-5"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-180",
+                            "startTime": "52:25",
+                            "text": "Municipalities in places like New Zealand and Australia do this, where people can report a pothole and other constituents can vote on it, which helps the public works department prioritize what to fix.",
+                            "author": "speaker-5"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-182",
+                            "startTime": "52:53",
+                            "text": "A similar process could be used for hearings, where you could have constituents submit and rank questions for the next witnesses. This would give you a top 10 list of questions with no extra work needed for staff—though they still do need more money.",
+                            "author": "speaker-5"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:approp-email-overload:msg130:msg139",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-email-overload-appropriations",
+                        "name": "Email overload from appropriations requests"
+                    },
+                    "name": "Email overload and last-minute submissions",
+                    "summary": "Late submissions and email-based requests overwhelm staff and encourage copy-paste errors; standardized workflows could help.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-130",
+                            "startTime": "37:31",
+                            "text": "Adding to the tax on staff, from a committee perspective, member offices often wait until a couple of hours before the deadline to submit information. We know this work is sometimes tasked to junior staff who are unfamiliar with the process.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-131",
+                            "startTime": "38:20",
+                            "text": "If you have to gather information from a constituent or a group, you just copy and paste to make sure you submit the work. It makes it extra confusing for them since the forms are already confusing to start with.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-139",
+                            "startTime": "41:20",
+                            "text": "From my experience, members do post a form on their website with a deadline, but people continue to ask for appropriations through email. That becomes our number one email topic, but it's hard to filter effectively since you don't have time to look through every email.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:accounts-taxonomy-alignment:msg61:msg132",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-account-naming-nightmare",
+                        "name": "Align account names and identifiers across government"
+                    },
+                    "name": "Account taxonomy alignment and unique IDs",
+                    "summary": "Appropriations accounts lack persistent IDs and aligned taxonomies across Treasury/OMB/agencies, creating manual mapping work.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-61",
+                            "startTime": "18:29",
+                            "text": "This makes it difficult for anyone to consume that data without using machine learning models to overcome something that could be solved by simply providing a CSV file. A similar challenge is linking the funded account to what the rest of the government calls that account, as the taxonomies differ between Treasury, OMB, and the agencies.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-62",
+                            "startTime": "19:31",
+                            "text": "You have to know all of these different naming conventions and sometimes manually overwrite things because there's no unique identifier in the text.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-132",
+                            "startTime": "38:53",
+                            "text": "Regarding all the different account names, I'm going through that nightmare myself. It's an internal, institutional conversation we need to have with our partners like the CBO to figure out a better way of tying data together. A lot of the systems we use are at least a decade old and weren't built with the vision to aggregate data the way we need to now.",
+                            "author": "speaker-2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-hearings-modernization",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Hearings Modernization: Goals, Formats, and Metadata",
+            "description": "Clarify hearing goals, reduce performative incentives, pilot new formats (including staff-led discussion), integrate constituent/expert input, and make proceedings discoverable across Congresses.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-hearing-goal-clarity",
+                    "text": "Clarify the primary goal of hearings (learn from experts for legislation/oversight vs. performative statements) to drive format choices."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-staff-led-discussion",
+                    "text": "Pilot extended staff-led discussions (e.g., 30 minutes) focusing on trade-offs, complementing shorter member rounds."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-constituent-questions",
+                    "text": "Collect and incorporate constituent-submitted questions to guide witness Q&A and increase relevance."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-experiment-hearing-styles",
+                    "text": "Experiment with varied hearing styles beyond current formats to promote substantive dialogue (learn from Modernization Committee pilots)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-hearing-tags",
+                    "text": "Tag/categorize hearings by issue area and committee jurisdiction to enable programmatic discovery for staffers and the public."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-iterative-conversation",
+                    "text": "Treat a hearing as one node in an iterative, multi-year conversation that includes hearings, CRS reports, QFRs, and floor speeches."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-search-engine-topic",
+                    "text": "Provide a topic-centric search engine that connects hearings, testimonies, QFRs, and follow-ups across Congresses."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-qfr-linkage",
+                    "text": "Link questions for the record (QFRs) back to the originating hearing moments and track responses and follow-up threads."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-less-performative",
+                    "text": "Reduce performative incentives (e.g., social media clips) by designing formats that prioritize learning and problem-solving."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-targeted-calls-evidence",
+                    "text": "Use targeted calls for evidence (UK model) ahead of hearings to gather scoped public/expert input on upcoming topics."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-question-ranking",
+                    "text": "Enable constituents to submit and rank prospective hearing questions to generate a data-informed top list for staff."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-defined-exceptions",
+                    "text": "Recognize committees with well-defined hearing purposes (e.g., Rules, Appropriations) while modernizing others' practices."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-sme-communication-methods",
+                    "text": "Provide clear, effective channels and formats for SMEs to brief committees and members beyond formal testimony."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:hearing-goals-vs-performance:msg10:msg37",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-hearing-goal-clarity",
+                        "name": "Clarify hearing goals (learning vs. performance)"
+                    },
+                    "name": "Clarify goals: learning vs. performative hearings",
+                    "summary": "Participants questioned whether hearings primarily serve learning/oversight or performative purposes and suggested redefining goals to guide format.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-10",
+                            "startTime": "04:10",
+                            "text": "We need a new paradigm for how hearings are conducted, so they are not just performative for social media but actually advance a predicate for meaningful discussion.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-25",
+                            "startTime": "07:53",
+                            "text": "Regarding the hearing process, what is the main goal of a committee hearing? Is the best outcome passing bills, discussing subjects, or something else? We should clarify the main goals when looking at committee modernization.",
+                            "author": "Nathan"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-30",
+                            "startTime": "08:33",
+                            "text": "It depends. Ostensibly, it should be for the committee to learn something by asking expert witnesses questions to gather information needed to draft legislation or perform oversight. That is the textbook explanation.",
+                            "author": "speaker-6"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-31",
+                            "startTime": "09:10",
+                            "text": "But as Alex was saying, many hearings today are more performative, with the goal being for members to make statements they can run on social media.",
+                            "author": "speaker-6"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-34",
+                            "startTime": "09:24",
+                            "text": "I'm sure that happens. However, I think the question of what hearings are for in the modern Congress is really open for debate.",
+                            "author": "Nathan"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-35",
+                            "startTime": "09:39",
+                            "text": "The current hearing format doesn't provide an enormously valuable purpose considering the amount of time committee staff spend on them. This is an area where a legislative innovator could redefine what committees do. We could discuss what that innovation might look like.",
+                            "author": "Nathan"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-36",
+                            "startTime": "10:17",
+                            "text": "While they serve some useful purposes, it feels like there's more potential in committees than is being realized.",
+                            "author": "Nathan"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-37",
+                            "startTime": "10:26",
+                            "text": "The possible exception would be places like the Rules Committee or the Appropriations Committee, which have a very defined purpose.",
+                            "author": "Nathan"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:hearing-format-experiments:msg11:msg32",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-staff-led-discussion",
+                        "name": "Pilot staff-led discussions and constituent questions"
+                    },
+                    "name": "Format experiments: staff-led trade-offs & constituent Qs",
+                    "summary": "Proposals include 30-minute staff-led discussions on trade-offs and incorporating constituent-submitted questions to focus witness Q&A.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-11",
+                            "startTime": "04:27",
+                            "text": "This could look like extended discussions on trade-offs, perhaps led by staff for 30 minutes instead of members for five. We could also involve questions from constituents and experiment with different hearing styles. The Modernization Committee has done great work on this already.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-32",
+                            "startTime": "09:15",
+                            "text": "Do members ever ask their constituents what questions they want to ask?",
+                            "author": "speaker-3"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:hearing-metadata-tags:msg39:msg190",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-hearing-tags",
+                        "name": "Tag hearings by issue area and jurisdiction"
+                    },
+                    "name": "Tagging and metadata for hearing discoverability",
+                    "summary": "Add issue/jurisdiction tags so staff can programmatically discover relevant hearings; pair with metadata linking across Congresses.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-39",
+                            "startTime": "10:37",
+                            "text": "I'm Tyler Clinton. As a suggestion, a short-term, achievable goal for hearings would be the ability to tag or categorize them by issue area ahead of time. This would allow that data to be used programmatically so staffers can find hearings relevant to their work.",
+                            "author": "speaker-8"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-46",
+                            "startTime": "12:34",
+                            "text": "I've written down two ideas: first, labeling hearings with issue tags, and second, addressing how to find information on a policy idea that might span multiple Congresses and multiple hearings.",
+                            "author": "speaker-1"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-190",
+                            "startTime": "54:29",
+                            "text": "I wanted to bring back the discussion about metadata for hearings—tagging them with issue areas, topics, or even which part of a committee's jurisdiction is being covered. For witnesses, I'd love to be able to choose a witness and see all of the hearings they've participated in.",
+                            "author": "speaker-8"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:hearing-iterative-conversation:msg41:msg45",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-iterative-conversation",
+                        "name": "Treat hearings as part of a multi-year conversation"
+                    },
+                    "name": "Iterative hearing conversation, QFR linkage, and search",
+                    "summary": "Position hearings within a connected, multi-year record linking testimony, QFRs, reports, and speeches; enable topic-centric search and follow-ups.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-41",
+                            "startTime": "11:09",
+                            "text": "I'm Daniel. To build on that, hearings and legislation are iterative. A hearing is part of a larger conversation that includes other hearings, CRS reports, and floor speeches on the same topic.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-42",
+                            "startTime": "11:30",
+                            "text": "The problem is that it's hard to find all the pieces, like all the witness testimony or the relevant parts of voluminous committee reports.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-43",
+                            "startTime": "11:49",
+                            "text": "For example, it's difficult to find a question for the record (QFR) and tie it back to the original hearing questions. This long conversation happens over time, but its memory is essentially erased, making it hard to pull together a comprehensive history of a topic.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-44",
+                            "startTime": "12:21",
+                            "text": "A hearing should be seen not as a discrete thing, but as one drop in the river of a conversation.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-45",
+                            "startTime": "12:28",
+                            "text": "It would be like a search engine for a topic that includes all the follow-ups.",
+                            "author": "speaker-6"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:hearing-question-ranking:msg32:msg182",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-question-ranking",
+                        "name": "Ranked constituent-submitted questions for hearings"
+                    },
+                    "name": "Ranked constituent questions for witnesses",
+                    "summary": "Enable constituents to submit and rank questions to generate a data-informed top list for staff.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-32",
+                            "startTime": "09:15",
+                            "text": "Do members ever ask their constituents what questions they want to ask?",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-182",
+                            "startTime": "52:53",
+                            "text": "A similar process could be used for hearings, where you could have constituents submit and rank questions for the next witnesses. This would give you a top 10 list of questions with no extra work needed for staff—though they still do need more money.",
+                            "author": "speaker-5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-witness-management",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Witness Management, Discovery, and Identifiers",
+            "description": "Centralized, data-driven witness discovery, tracking, scheduling, and intake; unique identifiers; cross-committee visibility and availability.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-witness-central-registry",
+                    "text": "Establish a centralized witness registry with unique identifiers to track appearances across committees and Congresses, including org changes."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-witness-source-of-truth",
+                    "text": "Build a cohesive scheduler as a single source of truth for witnesses: availability, prioritization, and transparency across committees."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-witness-intake-portal",
+                    "text": "Create a standardized intake portal for non-subpoenaed witnesses (aligned with or built on the witness disclosure form) to replace ad hoc email chains."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-cross-committee-visibility",
+                    "text": "Provide cross-committee visibility into 'frequent flyer' witnesses and prior testimony content to avoid siloed networks and improve diversity of perspectives."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-selection-aligned-narrative",
+                    "text": "Witness selection should begin with the chair/ranking narrative goal for the hearing, ensuring invited experts align with or constructively challenge that story arc."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-dmv-constraint",
+                    "text": "Logistical constraints (travel cost/time, loss of virtual hearings) skew the witness pool toward those in the DMV area or with means to attend."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-vetting-pipeline",
+                    "text": "Formalize a vetting pipeline pulling from subject-matter expert networks, alumni, and casework-derived lived-experience witnesses."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-expert-history-tracking",
+                    "text": "Enable choosing a witness and instantly viewing all hearings, testimonies, QFRs, and positions associated with that individual across time."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-availability-transparency",
+                    "text": "Expose non-sensitive availability data to reduce last-minute cancellations and improve scheduling predictability for staff and witnesses."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-casework-sourcing",
+                    "text": "Leverage Case Compass and constituent casework to surface potential witnesses with lived experience relevant to oversight topics."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:witness-registry-ids:msg47:msg53",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-witness-central-registry",
+                        "name": "Central witness registry with unique IDs"
+                    },
+                    "name": "Need for a centralized witness registry and IDs",
+                    "summary": "Committees lack a central registry and unique identifiers, limiting cross-committee visibility and tracking of frequent witnesses and prior testimony.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-47",
+                            "startTime": "13:04",
+                            "text": "I'm Mike, from the FTC. Where does information on witnesses come from, and is there a central way to follow them across committees? As people who run committees, can you explain how you keep track of them?",
+                            "author": "Mike"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-48",
+                            "startTime": "13:40",
+                            "text": "From an institutional standpoint, it's a challenge for staff to find witnesses and see if they've testified before. Many subject matter experts come up repeatedly, so if someone testified five years ago on the same topic before another committee, staff would want to know what they said.",
+                            "author": "speaker-1"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-49",
+                            "startTime": "14:18",
+                            "text": "Easily tracking witnesses, particularly when they change organizations, is a challenge.",
+                            "author": "speaker-1"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-51",
+                            "startTime": "14:43",
+                            "text": "By and large, committees don't track that. There's certainly no centralized, unique identifier for witnesses. We don't even know basic information, like who the high-frequency witnesses are. When we were recruiting witnesses, it was often a matter of who we could find on Google or who we knew personally.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-52",
+                            "startTime": "15:25",
+                            "text": "It's often a process of flying by the seat of your pants.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-53",
+                            "startTime": "15:35",
+                            "text": "There isn't much cross-committee communication on witnesses. For example, at CHA, I don't know who the frequent flyers are at the Transportation and Infrastructure committee, even when there's crossover. You tend to call your friends, former staffers, and contacts in outside spaces.",
+                            "author": "speaker-6"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:witness-selection-narrative:msg54:msg56",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-selection-aligned-narrative",
+                        "name": "Select witnesses aligned to hearing narrative"
+                    },
+                    "name": "Narrative-driven selection and vetting",
+                    "summary": "Begin with chair/ranking narrative and vet experts who can speak to it; committees draw on known networks for suggestions.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-54",
+                            "startTime": "16:10",
+                            "text": "The first and most important step is to talk to your chair and ranking member and ask what story they are trying to tell with a hearing. Then you identify witnesses who share that perspective or can add something interesting to it.",
+                            "author": "speaker-6"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-56",
+                            "startTime": "16:52",
+                            "text": "You don't want witnesses with a completely different perspective than the committee members. Committee staff, with their subject matter expertise, tend to have connections outside Congress and can pull from a pool of known experts for suggestions, who you then vet to see if they'd make a good witness.",
+                            "author": "speaker-6"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:witness-scheduler-intake:msg80:msg83",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-witness-source-of-truth",
+                        "name": "Cohesive scheduler and standardized intake portal"
+                    },
+                    "name": "Scheduler source of truth and standardized intake",
+                    "summary": "A unified scheduler and a centralized intake portal (built on the witness disclosure form) would streamline availability, prioritization, and transparency.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-80",
+                            "startTime": "24:39",
+                            "text": "To add to the witness management part, I can imagine a cohesive scheduler for all meetings. Not only would that create a source of truth for who the witnesses are, it would let you prioritize them, see who's available, and also create transparency.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-81",
+                            "startTime": "25:10",
+                            "text": "You could build it off the witness disclosure form that non-governmental witnesses fill out.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-82",
+                            "startTime": "25:16",
+                            "text": "We really need to have a centralized intake process for witnesses to fill out their information.",
+                            "author": "speaker-1"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-83",
+                            "startTime": "25:34",
+                            "text": "This would give the committees a formal process to make it easier on the witnesses. Right now, all that activity for a non-subpoenaed witness happens over email. This is definitely something on our radar.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:witness-logistics-constraints:msg58:msg59",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-dmv-constraint",
+                        "name": "DMV bias and loss of virtual options constrain witness pool"
+                    },
+                    "name": "Logistical constraints and DMV bias",
+                    "summary": "Travel costs, time, and the loss of virtual hearings limit witness diversity and skew toward DMV-based participants.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-58",
+                            "startTime": "17:39",
+                            "text": "The selection is also very dependent on who can actually make it to the hearing and who can afford to come out here and take time off.",
+                            "author": "speaker-6"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-59",
+                            "startTime": "17:47",
+                            "text": "The pool is also limited by who is already in the DMV area, especially since we no longer have virtual hearings.",
+                            "author": "speaker-6"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:witness-history-tracking:msg190:msg190",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-expert-history-tracking",
+                        "name": "Track a witness’s full history across Congresses"
+                    },
+                    "name": "Expert history tracking across hearings",
+                    "summary": "Staff want to choose a witness and instantly view all associated hearings, testimonies, QFRs, and positions across time.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-190",
+                            "startTime": "54:29",
+                            "text": "I wanted to bring back the discussion about metadata for hearings—tagging them with issue areas, topics, or even which part of a committee's jurisdiction is being covered. For witnesses, I'd love to be able to choose a witness and see all of the hearings they've participated in.",
+                            "author": "speaker-8"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:witness-casework-sourcing:msg156:msg156",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-casework-sourcing",
+                        "name": "Leverage casework to surface lived-experience witnesses"
+                    },
+                    "name": "Casework-sourced witnesses",
+                    "summary": "Casework and constituent communications can surface witnesses with lived experience relevant to hearing topics.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-156",
+                            "startTime": "46:26",
+                            "text": "Also, members of committees will use that casework to find witnesses for hearings, like bringing in a person who has personally experienced the issue.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-data-standards",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Data Standards, Structured Reports, and Interoperability",
+            "description": "Shift from PDFs and unstructured outputs to machine-readable data (CSV, USLM); align taxonomies and identifiers; enable system interoperability; improve accessibility and discoverability.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-pdf-to-data",
+                    "text": "Appropriations report tables are often images of ASCII tables in PDFs; publish underlying data as CSV to enable reuse without ML extraction."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-uslm-roadmap",
+                    "text": "Collaborate with GPO to model report data in USLM; short-term: post CSVs alongside PDFs; long-term: fully structured, linked legislative data."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-accessibility",
+                    "text": "Structured data and accessible formats directly improve screen reader accessibility and compliance with digital access standards."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-accounts-ids",
+                    "text": "Align account naming across Treasury, OMB, and agencies by introducing persistent unique identifiers; reduce manual overwrites/mapping."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-systems-interop",
+                    "text": "Ensure internal committee systems interoperate via shared vocabularies and APIs to eliminate duplicative data entry and reduce errors."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-structured-appropriations-effort",
+                    "text": "Advance ongoing efforts to structure appropriations data; progress slowed by competing priorities and limited staff capacity."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-hearing-metadata-standards",
+                    "text": "Define and apply a common metadata schema for hearings (issue tags, jurisdiction, related bills, witnesses, QFR links) to power search and analysis."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-expert-identifier",
+                    "text": "Create persistent identifiers for witnesses/experts to support cross-committee analytics and longitudinal research on expert influence and reuse."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-data-publishing-workflow",
+                    "text": "Establish lightweight workflows and approvals for posting companion CSVs and machine-readable annexes to committee prints and reports."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-comment-aggregation",
+                    "text": "Develop tools to aggregate and cluster public comments (e.g., from regulations.gov) and surface evolving idea threads across dockets."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-open-research-access",
+                    "text": "Ensure federally funded research outputs are accessible to Congress and the public, eliminating paywall barriers to evidence use."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-define-committee-outputs",
+                    "text": "Define a committee outputs taxonomy (hearings, markups, prints, reports) and publish companion machine-readable data alongside PDFs."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:data-csv-uslm:msg60:msg64",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-uslm-roadmap",
+                        "name": "CSV now, USLM modeling long-term"
+                    },
+                    "name": "Appropriations data as CSVs and USLM modeling",
+                    "summary": "Publish CSVs alongside PDFs and collaborate with GPO on USLM so report tables become structured, linked data instead of images of ASCII tables.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-60",
+                            "startTime": "18:02",
+                            "text": "To bring up another point related to committee reports, it would be valuable to better represent the information already being posted. For example, during the appropriations process, committee reports contain nice tables summarizing funding, but they're posted as images of ASCII tables within a PDF.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-61",
+                            "startTime": "18:29",
+                            "text": "This makes it difficult for anyone to consume that data without using machine learning models to overcome something that could be solved by simply providing a CSV file. A similar challenge is linking the funded account to what the rest of the government calls that account, as the taxonomies differ between Treasury, OMB, and the agencies.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-62",
+                            "startTime": "19:31",
+                            "text": "You have to know all of these different naming conventions and sometimes manually overwrite things because there's no unique identifier in the text.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-64",
+                            "startTime": "20:00",
+                            "text": "The problem with PDFs is real. I'm part of a group with GPO working to model report data in USLM. The immediate solution is for committees to post the various parts of the report, like CSVs, on their repository. The long-term roadmap is to get this data properly structured.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:data-accessibility:msg65:msg65",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-accessibility",
+                        "name": "Structured data improves digital accessibility"
+                    },
+                    "name": "Accessibility gains from structured data",
+                    "summary": "Accessible formats and structured data directly improve experiences for screen reader users and support compliance with access standards.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-65",
+                            "startTime": "20:46",
+                            "text": "This also directly relates to accessibility for anyone using a screen reader.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:data-systems-interop:msg102:msg133",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-systems-interop",
+                        "name": "Interoperate internal committee systems via shared vocabularies/APIs"
+                    },
+                    "name": "Systems interoperability across committees",
+                    "summary": "Committees rely on multiple, non-communicating internal systems; shared vocabularies and APIs would reduce duplicate entry and errors and ease inter-institutional data flow.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-102",
+                            "startTime": "30:39",
+                            "text": "Also, committees use multiple internal systems that are not communicating with each other, which requires staff to enter the same numbers in different places. A key part of modernization is making sure our systems can communicate and transfer information easily to reduce human error.",
+                            "author": "speaker-2"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-133",
+                            "startTime": "39:45",
+                            "text": "So there is a need to make it easier for information to flow from committee to committee or from institution to institution, so we can ingest it and then export or share it.",
+                            "author": "speaker-2"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:data-structuring-capacity:msg169:msg169",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-structured-appropriations-effort",
+                        "name": "Structured appropriations data efforts slowed by capacity"
+                    },
+                    "name": "Capacity constraints on data structuring",
+                    "summary": "Work to structure appropriations data exists but is slowed by competing priorities and limited staff capacity.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-169",
+                            "startTime": "48:51",
+                            "text": "We work very closely with Clint on that. There are many things we want to do, but it comes down to time, because there are a lot of other more pressing needs.",
+                            "author": "speaker-2"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:data-comment-aggregation:msg163:msg173",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-comment-aggregation",
+                        "name": "Aggregate and cluster public comments over time"
+                    },
+                    "name": "Public comment aggregation and idea clustering",
+                    "summary": "There’s an opportunity to aggregate and analyze large volumes of public comments (e.g., regulations.gov) to refine ideas and surface threads across dockets.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-163",
+                            "startTime": "47:57",
+                            "text": "To Alex's point, even regulations.gov has millions of comments with no public aggregation where an idea can be refined over time. Imagine if there were a public domain where staffers and experts could contribute to an idea that everyone thinks is great.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-173",
+                            "startTime": "49:20",
+                            "text": "Regarding public comments on regulations, my president has been working on a platform to explore and bubble up clusters of comment sentiment across dockets. It seems to be an under-resourced space where maybe the CAO or member offices could pilot something.",
+                            "author": "JD"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:data-open-research:msg178:msg178",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-open-research-access",
+                        "name": "Open access to federally funded research"
+                    },
+                    "name": "Open access to research outputs",
+                    "summary": "Make federally funded research accessible to Congress and the public by removing paywalls that impede evidence use.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-178",
+                            "startTime": "51:13",
+                            "text": "Another issue is how we free up all the federally funded research from universities. We pay for it with taxpayer dollars, but then it gets put behind a paywall, so researchers can't even send their papers to their member of Congress. That research should be accessible.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-transparency-oversight",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Transparency, Oversight, and Community Monitoring",
+            "description": "Give constituents clear visibility into funded projects, outcomes, member positions, and local impacts; leverage tech for ongoing monitoring and honest attribution.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-project-qr-codes",
+                    "text": "Adopt Recovery Act-style project QR codes/signage linking to official pages with funding, status, and outcomes (e.g., for infrastructure, CHIPS)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-community-visibility",
+                    "text": "Provide community-level dashboards so people can see what’s happening locally as a result of major laws (e.g., CHIPS Act)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-link-votes-to-projects",
+                    "text": "Link member votes to funded projects/outcomes so constituents can see who supported or opposed and why (with space for justification)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-oversight-improvement",
+                    "text": "Improve monitoring and oversight pipelines so district-level impacts of funded legislation are visible and searchable by constituents."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-honesty-and-credit",
+                    "text": "Address perceived gaps in honesty/credit-claiming by making vote and outcome linkages transparent and easy to verify publicly."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-member-activity-dashboard",
+                    "text": "Provide easy-to-use dashboards of each Member’s oversight, hearings, and legislative activity."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:oversight-qr-dashboards:msg7:msg8",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-project-qr-codes",
+                        "name": "QR codes and local dashboards for projects"
+                    },
+                    "name": "QR codes and community visibility",
+                    "summary": "Use Recovery Act-style QR codes and local dashboards so constituents can see project status and outcomes, including CHIPS Act investments.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-7",
+                            "startTime": "03:12",
+                            "text": "We need to integrate the idea of monitoring democracy in a more specific way, so people know what's happening in their communities as a result of appropriations. For example, during the Recovery Act, every project had a QR code linked to recovery.gov; we could do something similar for infrastructure spending.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-8",
+                            "startTime": "03:32",
+                            "text": "With legislation like the CHIPS Act, people should be able to go to their community and easily see what's going on.",
+                            "author": "speaker-3"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:oversight-improvement:msg12:msg12",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-oversight-improvement",
+                        "name": "Improve monitoring and oversight pipelines"
+                    },
+                    "name": "Improve monitoring and oversight pipelines",
+                    "summary": "Make district-level impacts of funded legislation visible and searchable for constituents.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-12",
+                            "startTime": "05:14",
+                            "text": "To summarize Alex's point, we are discussing how to improve monitoring and oversight so a constituent can know what is happening in their district as a result of legislation that has been funded.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:oversight-votes-linkage:msg13:msg14",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-link-votes-to-projects",
+                        "name": "Link votes to projects/outcomes with explanations"
+                    },
+                    "name": "Link votes to projects and enable honest attribution",
+                    "summary": "Connect member votes to funded projects and outcomes with explanations to address perceived gaps in honesty and credit-claiming.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-13",
+                            "startTime": "05:30",
+                            "text": "And they should know if their member voted for it.",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-14",
+                            "startTime": "05:33",
+                            "text": "Right now, there's a lack of honesty about that. If a project is having an impact on the community, the member should be able to say yes, they supported it. If it's not, they should be able to justify their vote against it.",
+                            "author": "speaker-3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-staff-capacity",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Staff Capacity, Funding, and Implementation",
+            "description": "Under-resourcing is a root cause across modernization efforts; align MRA and tool funding to enable sustained improvements and maintenance.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-under-resourced",
+                    "text": "Congress is under-resourced relative to responsibilities; staff often cover multiple roles with small teams and limited tech budgets."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-capacity-blocker",
+                    "text": "Lack of capacity prevents systematic tasks like CSV publishing, metadata tagging, and maintaining witness registries from happening consistently."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-double-leg-branch-funding",
+                    "text": "Top-line proposal: significantly increase Legislative Branch funding (e.g., 'cost of a stealth bomber') to meet oversight and legislative needs."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-mra-link",
+                    "text": "Capacity constraints tie directly to the MRA budget process; better planning and right-sized budgets would mitigate staff overload."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-implementation-funding",
+                    "text": "Tooling and modernization (intake portals, schedulers, data pipelines) require dedicated funding, staffing, and maintenance commitments."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:capacity-under-resourced:msg97:msg151",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-under-resourced",
+                        "name": "Congress under-resourced relative to mission"
+                    },
+                    "name": "Under-resourced Congress and overworked staff",
+                    "summary": "Chronic under-resourcing results in staff wearing multiple hats, small teams, and insufficient technology budgets to meet oversight and legislative demands.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-97",
+                            "startTime": "28:50",
+                            "text": "Anyone who's worked around Congress understands that everyone wears a lot of hats and works long hours. There's a desire to glorify the work ethic, but it's not just about being zealous in public service.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-98",
+                            "startTime": "29:20",
+                            "text": "It's a result of the fact that most people are doing two or more people's jobs. This is a result of decisions, intentional or otherwise, for Congress to under-resource itself relative to the rest of the government. Our staff sizes are too small, our salary pools are too small, and our ability to implement technology is underfunded.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-150",
+                            "startTime": "44:25",
+                            "text": "I won't disagree. The figure we often cite is that the legislative branch in its entirety has about the same funding as the Department of Commerce.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-151",
+                            "startTime": "44:48",
+                            "text": "And we're expected to oversee the entire apparatus of the executive branch and produce legislation, which should have been the first thing I said.",
+                            "author": "JD"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:capacity-blockers:msg66:msg67",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-capacity-blocker",
+                        "name": "Capacity limits block consistent data work"
+                    },
+                    "name": "Capacity constraints block modernization tasks",
+                    "summary": "Posting CSVs, adding metadata, and maintaining identifiers require staff time and approvals that busy teams can’t consistently spare.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-66",
+                            "startTime": "20:55",
+                            "text": "To the point of the Appropriations Committee posting a CSV—they could, but that requires a staffer to take time from an already very busy schedule to do something different, get it approved, and then do it on an ongoing basis. This applies to many of these ideas, like labeling witnesses or attaching identifiers to reports.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-67",
+                            "startTime": "21:27",
+                            "text": "At least right now, it's a staff capacity issue. The fundamental problem committees and Congress are having is that we don't have the capacity to do the work that needs to be done.",
+                            "author": "JD"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:capacity-funding-increase:msg146:msg150",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-double-leg-branch-funding",
+                        "name": "Significantly increase Legislative Branch funding"
+                    },
+                    "name": "Increase Legislative Branch funding (stealth bomber)",
+                    "summary": "Proposal to double Legislative Branch funding—e.g., the cost of one stealth bomber—to alleviate systemic under-resourcing and enable innovation.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-146",
+                            "startTime": "44:01",
+                            "text": "Then the top-level suggestion is to double the funding for the legislative branch.",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-147",
+                            "startTime": "44:09",
+                            "text": "Seriously, how about the cost of one stealth bomber for the legislative branch? How much of a difference would that make? I think the reason there are so many problems is there aren't enough resources to go around.",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-150",
+                            "startTime": "44:25",
+                            "text": "I won't disagree. The figure we often cite is that the legislative branch in its entirety has about the same funding as the Department of Commerce.",
+                            "author": "JD"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:capacity-mra-link:msg99:msg99",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-mra-link",
+                        "name": "Capacity constraints tie to MRA budgeting"
+                    },
+                    "name": "Capacity and the MRA budget process",
+                    "summary": "Recognizes the link between staff capacity constraints and the MRA budget process.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-99",
+                            "startTime": "29:46",
+                            "text": "That definitely ties in with the MRA budget process issue.",
+                            "author": "speaker-5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-public-feedback",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Public Feedback, Petitions, and Expert Engagement",
+            "description": "Design channels for constituents and experts to contribute meaningfully; balance targeted calls with always-on portals; leverage crowdsourcing tools.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-petition-platforms",
+                    "text": "Adopt petition/participation platforms with clear thresholds that trigger concrete actions, learning from international parliaments’ practices."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-capacity-vs-power",
+                    "text": "Barrier to feedback loops is often capacity rather than unwillingness to cede agenda-setting; staff time limits dampen innovation."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-targeted-rfis",
+                    "text": "Publish targeted requests for information on upcoming hearing topics to solicit scoped input from experts and the public (UK model)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-expert-training-channel",
+                    "text": "Provide training and a clear channel for experts to submit analyses directly to committees instead of ad hoc emailing individual staffers."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-ideation-portals",
+                    "text": "Use ideation tools to crowdsource appropriations ideas and hearing questions; allow community voting to surface top items with minimal staff processing."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-case-compass-signal",
+                    "text": "Leverage Case Compass to surface anonymized, aggregated demand signals (e.g., spikes in infrastructure or VA issues) for committees and hearings planning."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-public-comment-clustering",
+                    "text": "Aggregate and cluster public comments (e.g., regulations.gov) to allow idea refinement and community co-creation over time, not just raw counts."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-field-hearings",
+                    "text": "Field hearings provide valuable constituent contact but are costly and infrequent; virtual or hybrid options could broaden reach if allowed/funded."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:feedback-petitions:msg141:msg145",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-petition-platforms",
+                        "name": "Petition platforms with threshold-triggered actions"
+                    },
+                    "name": "Petition platforms and capacity vs. power",
+                    "summary": "International petition platforms tie thresholds to actions; barriers here are often staff capacity rather than willingness to cede agenda-setting.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-141",
+                            "startTime": "42:09",
+                            "text": "Petition platforms are used in parliaments elsewhere, where if a petition gets enough support, something concrete happens, like a bill gets a vote on the floor. What disconnect prevents that from happening here? My assumption is that offices are unwilling to cede power to constituents to define their agenda.",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-142",
+                            "startTime": "42:57",
+                            "text": "My assumption is that if that feedback loop happens and people see that their participation matters, they'll come back to it. Other countries do this.",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-143",
+                            "startTime": "43:12",
+                            "text": "I would argue that sounds more like a capacity issue than an issue of being willing to relinquish power. We already see members with really innovative strategies to engage with their constituents.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-145",
+                            "startTime": "43:31",
+                            "text": "At the individual member level, there would be more innovation and investment in experimental ideas if it were possible. The problem is that staffs are so underfunded and under-resourced that they're just doing what they know works because they need to get through the day.",
+                            "author": "JD"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:feedback-targeted-rfis:msg174:msg177",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-targeted-rfis",
+                        "name": "Targeted RFIs ahead of hearings (UK model)"
+                    },
+                    "name": "Targeted calls for evidence and RFIs",
+                    "summary": "Committees can selectively publish targeted questions for upcoming topics to solicit scoped input from experts and the public.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-174",
+                            "startTime": "50:02",
+                            "text": "Drawing some threads together, there could be a middle point for public input. The UK has a platform where committees can selectively put out questions they want to hear about from experts or the public on a certain subject for an upcoming hearing. It's a targeted, not always-on, approach.",
+                            "author": "JD"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-176",
+                            "startTime": "50:58",
+                            "text": "How do they ensure that all the relevant constituents know about that request for information?",
+                            "author": "speaker-3"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-177",
+                            "startTime": "51:04",
+                            "text": "It's on a public website. The challenge is the same as getting the public to know about anything the government does.",
+                            "author": "JD"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:feedback-expert-channels:msg158:msg160",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-expert-training-channel",
+                        "name": "Direct expert submission channels with training"
+                    },
+                    "name": "Direct channels for expert submissions",
+                    "summary": "Establish public channels and training so experts can submit analyses directly to committees without guesswork or opaque email routes; consider publicizing communications.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-158",
+                            "startTime": "47:56",
+                            "text": "The second point is there is no obvious way for experts to directly communicate with committees. In the United Kingdom, there is training for experts to communicate with Parliament through established channels. Here, if I want to file a comment, I have to go on LegiStorm, guess who the right staffer is, and send an email.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-159",
+                            "startTime": "47:36",
+                            "text": "And that communication is not public unless you make it so.",
+                            "author": "speaker-10"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-160",
+                            "startTime": "47:39",
+                            "text": "Exactly. There isn't a feedback loop.",
+                            "author": "speaker-7"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:feedback-ideation-portals:msg84:msg182",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-ideation-portals",
+                        "name": "Ideation portals for appropriations and hearing Qs"
+                    },
+                    "name": "Ideation portals for appropriations and hearings",
+                    "summary": "Use ideation tools and focus-group-style feedback to crowdsource appropriations ideas and hearing questions with community voting.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-84",
+                            "startTime": "25:55",
+                            "text": "Along with witness testimony and appropriations intake, it would be interesting to know if committees gather constituent feedback while actually developing legislation, not just in a hearing model, but perhaps through a focus group to get a pulse check on a topic.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-179",
+                            "startTime": "51:43",
+                            "text": "I'd like to propose using ideation tools to help with appropriations, staff capacity, and feedback. It crowdsources the work to constituents. For example, you could ask people in a district for their ideas for the next appropriation, and they could submit and upvote or downvote ideas.",
+                            "author": "speaker-5"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-180",
+                            "startTime": "52:25",
+                            "text": "Municipalities in places like New Zealand and Australia do this, where people can report a pothole and other constituents can vote on it, which helps the public works department prioritize what to fix.",
+                            "author": "speaker-5"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-182",
+                            "startTime": "52:53",
+                            "text": "A similar process could be used for hearings, where you could have constituents submit and rank questions for the next witnesses. This would give you a top 10 list of questions with no extra work needed for staff—though they still do need more money.",
+                            "author": "speaker-5"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:feedback-case-compass:msg153:msg156",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-case-compass-signal",
+                        "name": "Use Case Compass aggregated signals"
+                    },
+                    "name": "Case Compass demand signals and uses",
+                    "summary": "Mine constituent communications across the House to identify trends and inform hearings planning and witness sourcing.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-153",
+                            "startTime": "45:20",
+                            "text": "Two quick things. One, there's the development of Case Compass, which is an effort to mine constituent communication data and surface aggregated, anonymized data across the House. This could identify trends like complaints about infrastructure or VA benefits.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-154",
+                            "startTime": "46:16",
+                            "text": "This is a demand signal, and we haven't made good use of that demand signal yet.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-156",
+                            "startTime": "46:26",
+                            "text": "Also, members of committees will use that casework to find witnesses for hearings, like bringing in a person who has personally experienced the issue.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:feedback-field-hearings:msg86:msg88",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-field-hearings",
+                        "name": "Field hearings value vs. cost; virtual options"
+                    },
+                    "name": "Field hearings: value, cost, and frequency",
+                    "summary": "Field hearings are valuable but expensive and infrequent; virtual or hybrid options could broaden reach if allowed and funded.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-86",
+                            "startTime": "26:31",
+                            "text": "The Natural Resources Committee experimented with a platform to collect public comment on a big bill, where people could go in and comment on different parts. I believe Darrell Issa used to do some of that at Oversight as well.",
+                            "author": "speaker-6"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-87",
+                            "startTime": "27:11",
+                            "text": "However, there often aren't a lot of opportunities for committee staff to interact with constituents, as that typically falls on the member offices. Committees don't really have constituents, so staff only get hands-on experience during field hearings.",
+                            "author": "speaker-6"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-88",
+                            "startTime": "27:33",
+                            "text": "Field hearings are not regular opportunities. They're expensive and a pain to do, but they're worth it.",
+                            "author": "speaker-6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-joint-hearings-mra",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Joint Hearings and MRA Budget Coordination",
+            "description": "Coordinate across committees under shared jurisdiction; use joint hearings to align early on MRA needs and reduce duplication.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-joint-cha-legbranch",
+                    "text": "Hold joint hearings between Legislative Branch Appropriations and CHA to align on MRA needs using real data early in the cycle."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-build-to-right-number",
+                    "text": "Plan toward an evidence-based MRA number from the start rather than backtracking to a predetermined figure at year-end."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-shared-jurisdiction",
+                    "text": "Leverage House rules permitting joint work for shared jurisdiction to reduce duplication and improve coordination."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:joint-hearings-mra:msg18:msg23",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-joint-cha-legbranch",
+                        "name": "Joint Leg Branch Approps + CHA on MRA"
+                    },
+                    "name": "Joint CHA + Leg Branch Approps on MRA",
+                    "summary": "Proposes joint hearings between Legislative Branch Appropriations and CHA to align early on MRA needs using real data.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-18",
+                            "startTime": "06:29",
+                            "text": "I'm Omarawan, founder of Hill climbers. I'd like to see more joint hearings between different committees, not just between the House and Senate. For example, the Legislative Branch Appropriations Committee sets MRA budgets in February, and then CHA has to reverse-engineer those budgets in the fall. If they met together, they could use real data to determine the actual needs from the start.",
+                            "author": "speaker-5"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-21",
+                            "startTime": "07:33",
+                            "text": "So the suggestion is for more joint hearings or shared work, which is allowed for under House rules on shared jurisdiction, with a specific focus on the MRA budget process.",
+                            "author": "speaker-1"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-23",
+                            "startTime": "07:44",
+                            "text": "So, your specific focus is the MRA budget process.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:joint-build-right-number:msg19:msg19",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-build-to-right-number",
+                        "name": "Build toward evidence-based MRA number"
+                    },
+                    "name": "Build to the right MRA number early",
+                    "summary": "Start from real needs and data to set the MRA number rather than backtracking to a predetermined figure at year-end.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-19",
+                            "startTime": "07:16",
+                            "text": "That way, you're building toward the appropriate budget number for the MRA, rather than having to backtrack to a predetermined number at the end of the year.",
+                            "author": "speaker-5"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:joint-shared-jurisdiction:msg21:msg21",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-shared-jurisdiction",
+                        "name": "Use House rules for shared jurisdiction"
+                    },
+                    "name": "Shared jurisdiction coordination",
+                    "summary": "Leverage House rules permitting joint work for shared jurisdiction to reduce duplication and improve coordination.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-21",
+                            "startTime": "07:33",
+                            "text": "So the suggestion is for more joint hearings or shared work, which is allowed for under House rules on shared jurisdiction, with a specific focus on the MRA budget process.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "cx:cluster-committee-memory",
+            "@type": "http://congress.gov/terms#Cluster",
+            "name": "Committee Memory, Histories, and Strategic Planning",
+            "description": "Recover and maintain committee histories, make iterative work discoverable, and develop substantive plans and retrospectives for continuity across Congresses.",
+            "itemListElement": [
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-committee-histories",
+                    "text": "Commission and maintain up-to-date committee histories; many comprehensive accounts are decades old (e.g., Rules last major history in 1982)."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-substantive-reports",
+                    "text": "Go beyond pro forma biannual activity reports to produce periodic, substantive analyses of committee processes and outcomes."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-mini-strategic-plans",
+                    "text": "Create mini strategic plans each Congress that define mission, priorities, and metrics—and report on execution meaningfully."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-onboarding-context",
+                    "text": "Provide new staffers/members with accessible context: what the committee has done, how it changed, and where to find relevant archives."
+                },
+                {
+                    "@type": "http://congress.gov/terms#Idea",
+                    "@id": "cx:idea-iterative-archives",
+                    "text": "Preserve the multi-year 'river' of conversation by connecting hearings, reports, QFRs, and floor debates in a cohesive knowledge graph."
+                }
+            ],
+            "cx:threads": [
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:committee-histories-context:msg68:msg70",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-committee-histories",
+                        "name": "Recover and maintain committee histories"
+                    },
+                    "name": "Recover committee histories and onboarding context",
+                    "summary": "House committees often lack recent, comprehensive histories; onboarding suffers without context on what committees have done and how they’ve evolved.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-68",
+                            "startTime": "21:57",
+                            "text": "Oftentimes, committees don't have a sense of what they've done in the past. I went and looked at all the committees that had experts write about their history.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-69",
+                            "startTime": "22:14",
+                            "text": "The last great history of the Rules Committee was published in 1982. While committees do biannual reports, there isn't a reflexive understanding of what the committee has done or how it has changed. There is a lack of understanding of what a committee is for or what it has accomplished.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-70",
+                            "startTime": "22:53",
+                            "text": "When you come in as a new staffer or member, how would you know the history of the House Admin committee? There's a lack of this kind of context-making.",
+                            "author": "speaker-7"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:committee-substantive-reports:msg72:msg77",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-substantive-reports",
+                        "name": "Produce substantive periodic analyses"
+                    },
+                    "name": "Substantive reports beyond pro forma",
+                    "summary": "Move beyond perfunctory activity reports to periodic, substantive analyses of committee processes, outputs, and history.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-72",
+                            "startTime": "23:13",
+                            "text": "We're talking about how to view work in data, like number of bills processed, but there's also the question of a committee's sense of self. Are they asking experts to come in and analyze what they've been doing? That kind of analysis is useful.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-75",
+                            "startTime": "23:41",
+                            "text": "All committees in the House create plans and report on their execution. Having read them, though, it seems to be a pro forma exercise because it's a pain.",
+                            "author": "speaker-7"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-77",
+                            "startTime": "24:05",
+                            "text": "Right, so there are committee activity reports and monthly reports, but you're suggesting something more substantive, like a periodic update on the committee's process and history.",
+                            "author": "speaker-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "http://congress.gov/terms#Thread",
+                    "@id": "cx:committee-mini-strategic-plans:msg73:msg75",
+                    "ref:idea": {
+                        "@type": "http://congress.gov/terms#Idea",
+                        "@id": "cx:idea-mini-strategic-plans",
+                        "name": "Mini strategic plans and mission clarity"
+                    },
+                    "name": "Mini strategic plans with mission and metrics",
+                    "summary": "Propose mini strategic plans each Congress that define mission, priorities, and metrics, with meaningful reporting on execution.",
+                    "cx:comments": [
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-73",
+                            "startTime": "23:32",
+                            "text": "They could also set mini strategic plans for each Congress.",
+                            "author": "speaker-5"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-74",
+                            "startTime": "23:37",
+                            "text": "Exactly, including defining what their mission is.",
+                            "author": "speaker-4"
+                        },
+                        {
+                            "@type": "http://congress.gov/terms#Comment",
+                            "@id": "cx:msg-75",
+                            "startTime": "23:41",
+                            "text": "All committees in the House create plans and report on their execution. Having read them, though, it seems to be a pro forma exercise because it's a pain.",
+                            "author": "speaker-7"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "cx:edges": [
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-data-standards",
+            "relation": "Capacity limits slow CSV/USLM, IDs, and metadata upkeep."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Limited staff time drives inconsistent intake and last-minute work."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Under-resourcing discourages experimentation and deep inquiry."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-public-feedback",
+            "relation": "Feedback portals and review pipelines require staff and tools."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-witness-management",
+            "relation": "Maintaining IDs/schedulers needs sustained resources."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-committee-memory",
+            "relation": "Underfunding hinders histories and retrospectives."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Community tracking and vote linkages need staff support."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-staff-capacity",
+            "to": "cx:cluster-joint-hearings-mra",
+            "relation": "Joint planning can reduce rework across committees."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Shared taxonomies, IDs, and APIs enable standardized intake."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Structured, linked data powers dashboards and QR code pages."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Hearing metadata and cross-year linkage require common schemas."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-data-standards",
+            "to": "cx:cluster-witness-management",
+            "relation": "Unique witness IDs and tracking depend on shared standards."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Ranked questions and calls for evidence inform agendas and Q&A."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Feedback portals/ideation route community priorities to requests."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-witness-management",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "Discovery and scheduling improve witness diversity and substance."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-committee-memory",
+            "to": "cx:cluster-hearings-modernization",
+            "relation": "History and connected archives inform goals and avoid duplication."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-joint-hearings-mra",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Early, joint MRA planning informs downstream intake."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-transparency-oversight",
+            "to": "cx:cluster-appropriations-intake",
+            "relation": "Project outcomes feed evidence back into future priorities."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-transparency-oversight",
+            "to": "cx:cluster-public-feedback",
+            "relation": "Visibility into local impacts catalyzes informed input."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-committee-memory",
+            "to": "cx:cluster-data-standards",
+            "relation": "Sustained memory benefits from standardized, linked data."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-witness-management",
+            "relation": "Case Compass/public submissions surface lived-experience witnesses."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-hearings-modernization",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Learning-oriented hearings strengthen oversight and trust."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-joint-hearings-mra",
+            "to": "cx:cluster-staff-capacity",
+            "relation": "Shared work/jurisdiction can relieve staff workload."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-appropriations-intake",
+            "to": "cx:cluster-witness-management",
+            "relation": "Intake/scheduling patterns are transferable across workflows."
+        },
+        {
+            "@type": "http://congress.gov/terms#Edge",
+            "from": "cx:cluster-public-feedback",
+            "to": "cx:cluster-transparency-oversight",
+            "relation": "Public input helps target oversight."
+        }
+    ],
+    "isPartOf": {
+        "@type": "http://schema.org/Event",
+        "name": "Committee Modernization Discussion – Breakout Session 1"
+    }
+}

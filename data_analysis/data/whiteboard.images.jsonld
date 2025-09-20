@@ -1,0 +1,449 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "cx": "http://congress.gov/terms#",
+    "Cluster": "http://congress.gov/terms#Cluster",
+    "Idea": "http://congress.gov/terms#Idea",
+    "Edge": "http://congress.gov/terms#Edge"
+  },
+  "@type": "http://schema.org/CreativeWork",
+  "name": "Congress process brainstorming: hearings, appropriations, oversight",
+  "description": "Two whiteboards capture process pain points and improvements around hearings, appropriations submissions, oversight, metadata/discoverability, joint hearings, staff capacity, and outputs/reporting. Visual arrows suggest flows (public → member → appropriations committee), dependencies (hearings need witness scheduling and metadata), and cross-cutting constraints (staff capacity).",
+  "about": [
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:hearings",
+      "name": "Hearings"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:witness-management",
+      "name": "Witness management"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:appropriations",
+      "name": "Appropriations submission process"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:oversight",
+      "name": "Oversight and monitoring"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:metadata-discoverability",
+      "name": "Metadata, tagging, and discoverability"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:joint-hearings",
+      "name": "Joint hearings"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:staff-capacity",
+      "name": "Staff capacity and resources"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:committee-history",
+      "name": "Committee prints and history"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:public-input",
+      "name": "Public comments and feedback"
+    },
+    {
+      "@type": "http://schema.org/Thing",
+      "@id": "cx:outputs-reporting",
+      "name": "Outputs and reporting"
+    }
+  ],
+  "keywords": [
+    "hearings",
+    "witness scheduling",
+    "intake process",
+    "metadata",
+    "issue tags",
+    "discoverability",
+    "committee print",
+    "committee history",
+    "oversight",
+    "monitoring",
+    "appropriations",
+    "public feedback",
+    "regulations.gov",
+    "joint hearings",
+    "shared jurisdiction",
+    "MRA budget process",
+    "staff capacity",
+    "reports",
+    "PDF",
+    "innovation",
+    "budget release",
+    "as-is process",
+    "standardize"
+  ],
+  "hasPart": [
+    {
+      "@id": "cx:hearings-process",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Hearings process",
+      "description": "How to improve hearings; ensure substance over performance; integrate SMEs and oversight learning.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:hearings-how-to-be-better",
+          "text": "Improve how hearings are run."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:performance-vs-sme-communication",
+          "text": "Avoid performance-art hearings; focus on SMEs communicating information."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:sme-communication-methods",
+          "text": "How do SMEs communicate effectively to committees and members?"
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:hearing-as-oversight-learning",
+          "text": "Use hearings for learning oversight, not just theatrics."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:hearing-innovation-question",
+          "text": "What does innovation look like in the hearings process?"
+        }
+      ]
+    },
+    {
+      "@id": "cx:witness-mgmt",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Witness management",
+      "description": "Operational steps for managing hearing witnesses.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:witness-scheduling",
+          "text": "Scheduling of witnesses."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:witness-intake-process",
+          "text": "Witness intake process."
+        }
+      ]
+    },
+    {
+      "@id": "cx:metadata-cluster",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Metadata and discoverability",
+      "description": "Tagging and metadata to make hearings and committee work findable.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:label-hearings-with-issue-tags",
+          "text": "Label hearings with issue tags."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:metadata-callout",
+          "text": "Add structured metadata to hearings and related outputs."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:finding-past-info",
+          "text": "Enable finding past information on a topic."
+        }
+      ]
+    },
+    {
+      "@id": "cx:joint-hearings",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "More joint hearings",
+      "description": "Coordinate across committees to share work and jurisdiction.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:shared-work",
+          "text": "Shared work between committees."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:shared-jurisdiction",
+          "text": "Shared jurisdiction."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:mra-budget-process-for-committees",
+          "text": "MRA budget process for committees."
+        }
+      ]
+    },
+    {
+      "@id": "cx:staff-capacity",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Capacity of staff",
+      "description": "Resource constraint: too much work, not enough time; more funding requested.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:need-more-funding",
+          "text": "More $ for staff capacity."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:too-much-work-not-enough-time",
+          "text": "Too much work, not enough time."
+        }
+      ]
+    },
+    {
+      "@id": "cx:committee-print-history",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Committee print and history",
+      "description": "Published resources and institutional history beyond activity reports.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:committee-print",
+          "text": "Committee print."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:committee-history",
+          "text": "RE → Committee history."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:beyond-committee-activity-report",
+          "text": "More than Committee Activity Report."
+        }
+      ]
+    },
+    {
+      "@id": "cx:appropriations-submission-process",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Appropriations submission process",
+      "description": "Flow of requests and timing; need to understand as-is and standardize intake.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:public-to-member-to-approp-committee",
+          "text": "Public → Member → Appropriations Committee."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:what-is-the-date",
+          "text": "Question: what is the date/timeline?"
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:understand-as-is-process",
+          "text": "Understand the as-is process."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:standardize-intake-process",
+          "text": "Standardize the intake process."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:align-with-budget-release",
+          "text": "Align with release of the budget."
+        }
+      ]
+    },
+    {
+      "@id": "cx:public-input",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Public comments and feedback",
+      "description": "Collect public input similar to regulations.gov comments.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:regulations-gov-like-comments",
+          "text": "Public comments/feedback like comments on proposed regulations (regulations.gov)."
+        }
+      ]
+    },
+    {
+      "@id": "cx:outputs-reporting",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Outputs and reporting",
+      "description": "Define and publish committee outputs in accessible formats.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:report-to-pdf",
+          "text": "Report → PDF."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:define-committee-outputs",
+          "text": "Solution: What are the outputs from committee meetings? Hearings, markups, other."
+        }
+      ]
+    },
+    {
+      "@id": "cx:oversight-cluster",
+      "@type": "http://congress.gov/terms#Cluster",
+      "name": "Oversight",
+      "description": "Monitoring the value and results from enacted laws and member activity.",
+      "itemListElement": [
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:oversight-monitoring",
+          "text": "Monitoring."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:recovery-act-reference",
+          "text": "Recovery Act (example reference for oversight focus)."
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:value-from-enacted-legislation",
+          "text": "What value is coming from enacted legislation to results?"
+        },
+        {
+          "@type": "http://congress.gov/terms#Idea",
+          "@id": "cx:my-members-activity",
+          "text": "My Member’s activity."
+        }
+      ]
+    }
+  ],
+  "cx:edges": [
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:hearings-process",
+      "to": "cx:witness-mgmt",
+      "relation": "Hearings require witness scheduling and intake."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:witness-mgmt",
+      "to": "cx:hearings-process",
+      "relation": "Witness management operationally supports hearings."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:hearings-process",
+      "to": "cx:metadata-cluster",
+      "relation": "Hearings need metadata and issue tags for discoverability."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:metadata-cluster",
+      "to": "cx:committee-print-history",
+      "relation": "Metadata enables searchable committee history and prints."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:committee-print-history",
+      "to": "cx:outputs-reporting",
+      "relation": "Committee prints are outputs beyond activity reports."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:hearings-process",
+      "to": "cx:joint-hearings",
+      "relation": "Proposed improvement: conduct more joint hearings."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:joint-hearings",
+      "to": "cx:staff-capacity",
+      "relation": "Shared work/jurisdiction can relieve staff capacity constraints."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:staff-capacity",
+      "to": "cx:hearings-process",
+      "relation": "Limited capacity constrains hearing improvements."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:appropriations-submission-process",
+      "to": "cx:public-input",
+      "relation": "Process begins with public input; path public → member → committee."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:public-input",
+      "to": "cx:appropriations-submission-process",
+      "relation": "Public comments feed member submissions to appropriations."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:appropriations-submission-process",
+      "to": "cx:witness-mgmt",
+      "relation": "Shares the concept of a standardized 'intake process' and scheduling."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:appropriations-submission-process",
+      "to": "cx:metadata-cluster",
+      "relation": "Standardized tagging and clear timelines (dates) improve the process."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:appropriations-submission-process",
+      "to": "cx:outputs-reporting",
+      "relation": "Appropriations submissions produce reports (often PDFs)."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:outputs-reporting",
+      "to": "cx:metadata-cluster",
+      "relation": "Outputs require metadata to be findable."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:outputs-reporting",
+      "to": "cx:oversight-cluster",
+      "relation": "Clear outputs support oversight, monitoring, and assessing value."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:hearings-process",
+      "to": "cx:oversight-cluster",
+      "relation": "Hearings inform oversight and learning."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:metadata-cluster",
+      "to": "cx:oversight-cluster",
+      "relation": "Finding past info improves oversight investigations."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:public-input",
+      "to": "cx:oversight-cluster",
+      "relation": "Public feedback can help oversight focus and evaluation."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:staff-capacity",
+      "to": "cx:oversight-cluster",
+      "relation": "Capacity constraints limit monitoring activity."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:staff-capacity",
+      "to": "cx:appropriations-submission-process",
+      "relation": "Capacity affects the ability to standardize and manage intake."
+    },
+    {
+      "@type": "http://congress.gov/terms#Edge",
+      "from": "cx:joint-hearings",
+      "to": "cx:oversight-cluster",
+      "relation": "Joint hearings strengthen cross-jurisdictional oversight."
+    }
+  ]
+}

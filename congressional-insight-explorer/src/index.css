@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&family=JetBrains+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --accent-amber: #f59e0b;
+  }
+
+  body {
+    @apply text-gray-900 bg-gray-50;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .graph-node {
+    @apply cursor-pointer transition-all duration-200;
+  }
+
+  .graph-node:hover {
+    filter: drop-shadow(0 0 8px rgba(30, 58, 138, 0.5));
+  }
+
+  .detail-pane {
+    @apply bg-white shadow-xl border-l border-gray-200;
+  }
+
+  .comment-card {
+    @apply bg-gray-50 rounded-lg p-4 mb-3 border border-gray-200 hover:border-gray-300 transition-colors;
+  }
+}

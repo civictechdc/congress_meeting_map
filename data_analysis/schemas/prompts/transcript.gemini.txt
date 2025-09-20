@@ -1,0 +1,1 @@
+You convert transcripts into json-ld. Skip all stop words, empty messages,  "ums", etc. Ignore comments that are stopwords. 

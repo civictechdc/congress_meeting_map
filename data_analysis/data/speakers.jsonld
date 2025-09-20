@@ -1,0 +1,82 @@
+{
+    "type": "SpeakerIdentityMap",
+    "conversation_id": "committee-modernization-discussion-1",
+    "identifiedSpeakers": [
+      {
+        "name": "Jennifer Hernandez",
+        "aliases": [
+          "Jen"
+        ],
+        "primaryId": "speaker-2"
+      },
+      {
+        "name": "Alex Howard",
+        "aliases": [
+          "Alex"
+        ],
+        "primaryId": "speaker-3"
+      },
+      {
+        "name": "Omarawan",
+        "primaryId": "speaker-5"
+      },
+      {
+        "name": "Kylie",
+        "primaryId": "speaker-6"
+      },
+      {
+        "name": "Daniel",
+        "primaryId": "speaker-7"
+      },
+      {
+        "name": "Tyler Clinton",
+        "primaryId": "speaker-8"
+      },
+      {
+        "name": "Nathan",
+        "aliases": [
+          "Nate"
+        ],
+        "mistakenAttributions": [
+          {
+            "incorrectId": "speaker-4",
+            "messageIds": [
+              "msg:25:speaker-4",
+              "msg:27:speaker-4",
+              "msg:34:speaker-4",
+              "msg:35:speaker-4",
+              "msg:36:speaker-4",
+              "msg:37:speaker-4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mike",
+        "mistakenAttributions": [
+          {
+            "incorrectId": "speaker-4",
+            "messageIds": [
+              "msg:47:speaker-4"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "JD",
+        "mistakenAttributions": [
+          {
+            "incorrectId": "speaker-4",
+            "messageIds": [
+              "msg:51:speaker-4",
+              "msg:52:speaker-4",
+              "msg:66:speaker-4",
+              "msg:67:speaker-4",
+              "msg:97:speaker-4",
+              "msg:98:speaker-4"
+            ]
+          }
+        ]
+      }
+    ]
+  }

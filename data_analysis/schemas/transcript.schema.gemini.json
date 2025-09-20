@@ -1,0 +1,69 @@
+{
+    "type": "object",
+    "description": "A fully transcribed conversation with speaker attribution and relational links.",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "BreakoutTranscript"
+            ]
+        },
+        "conversation_id": {
+            "type": "string",
+            "description": "A unique slug-like identifier for the entire conversation."
+        },
+        "messages": {
+            "type": "array",
+            "description": "An ordered list of all messages in the conversation.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "message_id": {
+                        "type": "string",
+                        "description": "A unique slug-like identifier for this message within the conversation. For example, 'msg:<position>:<speaker_id>', 'msg:2:speaker-1'."
+                    },
+                    "position": {
+                        "type": "integer",
+                        "description": "The sequential order of this message, starting from 1."
+                    },
+                    "speaker_id": {
+                        "type": "string",
+                        "description": "A consistent identifier for the speaker of this message, e.g., 'speaker-1'."
+                    },
+                    "startTime": {
+                        "type": "string",
+                        "description": "The timestamp indicating when the message was made."
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "The content of the message."
+                    }
+                },
+                "required": [
+                    "message_id",
+                    "startTime",
+                    "position",
+                    "speaker_id",
+                    "text"
+                ],
+                "propertyOrdering": [
+                    "message_id",
+                    "startTime",
+                    "position",
+                    "speaker_id",
+                    "text"
+                ]
+            }
+        }
+    },
+    "required": [
+        "type",
+        "conversation_id",
+        "messages"
+    ],
+    "propertyOrdering": [
+        "type",
+        "messages",
+        "conversation_id"
+    ]
+}

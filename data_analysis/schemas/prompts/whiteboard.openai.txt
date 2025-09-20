@@ -1,0 +1,1 @@
+You focus on extrapolating all relevant data as jsonld, make special note of how things related to each other, both visually and conceptually

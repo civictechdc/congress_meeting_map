@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SimCongress — Interactive Knowledge Graph MVP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">SC</div>
+        <div class="brand-text">
+          <h1>SimCongress</h1>
+          <p class="subtitle">Modern Committees — Knowledge Graph MVP</p>
+        </div>
+      </div>
+      <div class="controls">
+        <input id="globalSearch" type="search" placeholder="Search comments, threads, ideas…" />
+        <div class="view-toggle" role="tablist" aria-label="View Toggle">
+          <button id="tabGraph" class="active" role="tab" aria-selected="true">Graph</button>
+          <button id="tabTimeline" role="tab" aria-selected="false">Timeline</button>
+          <button id="tabTranscript" role="tab" aria-selected="false">Transcript</button>
+          <button id="tabWhiteboard" role="tab" aria-selected="false">Whiteboard</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section id="canvasPane" class="pane pane-left" aria-label="Graph Canvas">
+        <svg id="graph" tabindex="0" aria-label="Clusters Graph"></svg>
+        <div id="timeline" class="hidden" aria-label="Timeline"></div>
+        <div id="transcript" class="hidden" aria-label="Transcript"></div>
+        <div id="whiteboard" class="hidden" aria-label="Whiteboard"></div>
+      </section>
+      <aside id="detailPane" class="pane pane-right" aria-label="Details">
+        <div id="detailEmpty" class="detail-empty">
+          <h2>Explore the graph</h2>
+          <p>Select a cluster node to see details: description, key ideas, threads, and comments.</p>
+        </div>
+        <div id="detail" class="hidden"></div>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <div>
+        <span>MVP — local, no dependencies.</span>
+        <span>Serve via: <code>python3 -m http.server 8000</code> then open <code>http://localhost:8000/</code></span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+

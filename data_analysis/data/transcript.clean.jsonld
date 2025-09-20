@@ -1,0 +1,881 @@
+{
+    "type": "BreakoutTranscript",
+    "messages": [
+        {
+            "message_id": "msg:2:speaker-2",
+            "startTime": "00:10",
+            "position": 2,
+            "speaker_id": "speaker-2",
+            "text": "I'm Jennifer Hernandez. I want to discuss the appropriations process, specifically from the community perspective. We understand that members support programs in their jurisdictions through a member appropriation portal, but it seems there are some inefficiencies or delays in that process that I'm curious to hear about."
+        },
+        {
+            "message_id": "msg:3:speaker-2",
+            "startTime": "01:46",
+            "position": 3,
+            "speaker_id": "speaker-2",
+            "text": "Our office has found it challenging to access the committee process at times, as it can be a complex exercise."
+        },
+        {
+            "message_id": "msg:4:speaker-2",
+            "startTime": "02:33",
+            "position": 4,
+            "speaker_id": "speaker-2",
+            "text": "Are there opportunities to explore different ideas for how this could work?"
+        },
+        {
+            "message_id": "msg:5:speaker-1",
+            "startTime": "02:51",
+            "position": 5,
+            "speaker_id": "speaker-1",
+            "text": "That's one topic. What are some other ideas or subjects for modernizing committees?"
+        },
+        {
+            "message_id": "msg:7:speaker-4",
+            "startTime": "03:12",
+            "position": 7,
+            "speaker_id": "speaker-4",
+            "text": "We need to integrate the idea of monitoring democracy in a more specific way, so people know what's happening in their communities as a result of appropriations. For example, during the Recovery Act, every project had a QR code linked to recovery.gov; we could do something similar for infrastructure spending."
+        },
+        {
+            "message_id": "msg:8:speaker-3",
+            "startTime": "03:32",
+            "position": 8,
+            "speaker_id": "speaker-3",
+            "text": "With legislation like the CHIPS Act, people should be able to go to their community and easily see what's going on."
+        },
+        {
+            "message_id": "msg:10:speaker-4",
+            "startTime": "04:10",
+            "position": 10,
+            "speaker_id": "speaker-4",
+            "text": "We need a new paradigm for how hearings are conducted, so they are not just performative for social media but actually advance a predicate for meaningful discussion."
+        },
+        {
+            "message_id": "msg:11:speaker-4",
+            "startTime": "04:27",
+            "position": 11,
+            "speaker_id": "speaker-4",
+            "text": "This could look like extended discussions on trade-offs, perhaps led by staff for 30 minutes instead of members for five. We could also involve questions from constituents and experiment with different hearing styles. The Modernization Committee has done great work on this already."
+        },
+        {
+            "message_id": "msg:12:speaker-1",
+            "startTime": "05:14",
+            "position": 12,
+            "speaker_id": "speaker-1",
+            "text": "To summarize Alex's point, we are discussing how to improve monitoring and oversight so a constituent can know what is happening in their district as a result of legislation that has been funded."
+        },
+        {
+            "message_id": "msg:13:speaker-3",
+            "startTime": "05:30",
+            "position": 13,
+            "speaker_id": "speaker-3",
+            "text": "And they should know if their member voted for it."
+        },
+        {
+            "message_id": "msg:14:speaker-3",
+            "startTime": "05:33",
+            "position": 14,
+            "speaker_id": "speaker-3",
+            "text": "Right now, there's a lack of honesty about that. If a project is having an impact on the community, the member should be able to say yes, they supported it. If it's not, they should be able to justify their vote against it."
+        },
+        {
+            "message_id": "msg:15:speaker-1",
+            "startTime": "05:50",
+            "position": 15,
+            "speaker_id": "speaker-1",
+            "text": "As a nonpartisan staffer, I've seen this contrast between performative acts versus the reality of getting information communicated. Are there any other ideas?"
+        },
+        {
+            "message_id": "msg:18:speaker-5",
+            "startTime": "06:29",
+            "position": 18,
+            "speaker_id": "speaker-5",
+            "text": "I'm Omarawan, founder of Hill climbers. I'd like to see more joint hearings between different committees, not just between the House and Senate. For example, the Legislative Branch Appropriations Committee sets MRA budgets in February, and then CHA has to reverse-engineer those budgets in the fall. If they met together, they could use real data to determine the actual needs from the start."
+        },
+        {
+            "message_id": "msg:19:speaker-5",
+            "startTime": "07:16",
+            "position": 19,
+            "speaker_id": "speaker-5",
+            "text": "That way, you're building toward the appropriate budget number for the MRA, rather than having to backtrack to a predetermined number at the end of the year."
+        },
+        {
+            "message_id": "msg:21:speaker-1",
+            "startTime": "07:33",
+            "position": 21,
+            "speaker_id": "speaker-1",
+            "text": "So the suggestion is for more joint hearings or shared work, which is allowed for under House rules on shared jurisdiction, with a specific focus on the MRA budget process."
+        },
+        {
+            "message_id": "msg:23:speaker-1",
+            "startTime": "07:44",
+            "position": 23,
+            "speaker_id": "speaker-1",
+            "text": "So, your specific focus is the MRA budget process."
+        },
+        {
+            "message_id": "msg:25:speaker-4",
+            "startTime": "07:53",
+            "position": 25,
+            "speaker_id": "Nathan",
+            "text": "Regarding the hearing process, what is the main goal of a committee hearing? Is the best outcome passing bills, discussing subjects, or something else? We should clarify the main goals when looking at committee modernization."
+        },
+        {
+            "message_id": "msg:30:speaker-6",
+            "startTime": "08:33",
+            "position": 30,
+            "speaker_id": "speaker-6",
+            "text": "It depends. Ostensibly, it should be for the committee to learn something by asking expert witnesses questions to gather information needed to draft legislation or perform oversight. That is the textbook explanation."
+        },
+        {
+            "message_id": "msg:31:speaker-6",
+            "startTime": "09:10",
+            "position": 31,
+            "speaker_id": "speaker-6",
+            "text": "But as Alex was saying, many hearings today are more performative, with the goal being for members to make statements they can run on social media."
+        },
+        {
+            "message_id": "msg:32:speaker-3",
+            "startTime": "09:15",
+            "position": 32,
+            "speaker_id": "speaker-3",
+            "text": "Do members ever ask their constituents what questions they want to ask?"
+        },
+        {
+            "message_id": "msg:34:speaker-4",
+            "startTime": "09:24",
+            "position": 34,
+            "speaker_id": "Nathan",
+            "text": "I'm sure that happens. However, I think the question of what hearings are for in the modern Congress is really open for debate."
+        },
+        {
+            "message_id": "msg:35:speaker-4",
+            "startTime": "09:39",
+            "position": 35,
+            "speaker_id": "Nathan",
+            "text": "The current hearing format doesn't provide an enormously valuable purpose considering the amount of time committee staff spend on them. This is an area where a legislative innovator could redefine what committees do. We could discuss what that innovation might look like."
+        },
+        {
+            "message_id": "msg:36:speaker-4",
+            "startTime": "10:17",
+            "position": 36,
+            "speaker_id": "Nathan",
+            "text": "While they serve some useful purposes, it feels like there's more potential in committees than is being realized."
+        },
+        {
+            "message_id": "msg:37:speaker-4",
+            "startTime": "10:26",
+            "position": 37,
+            "speaker_id": "Nathan",
+            "text": "The possible exception would be places like the Rules Committee or the Appropriations Committee, which have a very defined purpose."
+        },
+        {
+            "message_id": "msg:39:speaker-8",
+            "startTime": "10:37",
+            "position": 39,
+            "speaker_id": "speaker-8",
+            "text": "I'm Tyler Clinton. As a suggestion, a short-term, achievable goal for hearings would be the ability to tag or categorize them by issue area ahead of time. This would allow that data to be used programmatically so staffers can find hearings relevant to their work."
+        },
+        {
+            "message_id": "msg:41:speaker-7",
+            "startTime": "11:09",
+            "position": 41,
+            "speaker_id": "speaker-7",
+            "text": "I'm Daniel. To build on that, hearings and legislation are iterative. A hearing is part of a larger conversation that includes other hearings, CRS reports, and floor speeches on the same topic."
+        },
+        {
+            "message_id": "msg:42:speaker-7",
+            "startTime": "11:30",
+            "position": 42,
+            "speaker_id": "speaker-7",
+            "text": "The problem is that it's hard to find all the pieces, like all the witness testimony or the relevant parts of voluminous committee reports."
+        },
+        {
+            "message_id": "msg:43:speaker-7",
+            "startTime": "11:49",
+            "position": 43,
+            "speaker_id": "speaker-7",
+            "text": "For example, it's difficult to find a question for the record (QFR) and tie it back to the original hearing questions. This long conversation happens over time, but its memory is essentially erased, making it hard to pull together a comprehensive history of a topic."
+        },
+        {
+            "message_id": "msg:44:speaker-7",
+            "startTime": "12:21",
+            "position": 44,
+            "speaker_id": "speaker-7",
+            "text": "A hearing should be seen not as a discrete thing, but as one drop in the river of a conversation."
+        },
+        {
+            "message_id": "msg:45:speaker-6",
+            "startTime": "12:28",
+            "position": 45,
+            "speaker_id": "speaker-6",
+            "text": "It would be like a search engine for a topic that includes all the follow-ups."
+        },
+        {
+            "message_id": "msg:46:speaker-1",
+            "startTime": "12:34",
+            "position": 46,
+            "speaker_id": "speaker-1",
+            "text": "I've written down two ideas: first, labeling hearings with issue tags, and second, addressing how to find information on a policy idea that might span multiple Congresses and multiple hearings."
+        },
+        {
+            "message_id": "msg:47:speaker-4",
+            "startTime": "13:04",
+            "position": 47,
+            "speaker_id": "Mike",
+            "text": "I'm Mike, from the FTC. Where does information on witnesses come from, and is there a central way to follow them across committees? As people who run committees, can you explain how you keep track of them?"
+        },
+        {
+            "message_id": "msg:48:speaker-1",
+            "startTime": "13:40",
+            "position": 48,
+            "speaker_id": "speaker-1",
+            "text": "From an institutional standpoint, it's a challenge for staff to find witnesses and see if they've testified before. Many subject matter experts come up repeatedly, so if someone testified five years ago on the same topic before another committee, staff would want to know what they said."
+        },
+        {
+            "message_id": "msg:49:speaker-1",
+            "startTime": "14:18",
+            "position": 49,
+            "speaker_id": "speaker-1",
+            "text": "Easily tracking witnesses, particularly when they change organizations, is a challenge."
+        },
+        {
+            "message_id": "msg:51:speaker-4",
+            "startTime": "14:43",
+            "position": 51,
+            "speaker_id": "JD",
+            "text": "By and large, committees don't track that. There's certainly no centralized, unique identifier for witnesses. We don't even know basic information, like who the high-frequency witnesses are. When we were recruiting witnesses, it was often a matter of who we could find on Google or who we knew personally."
+        },
+        {
+            "message_id": "msg:52:speaker-4",
+            "startTime": "15:25",
+            "position": 52,
+            "speaker_id": "JD",
+            "text": "It's often a process of flying by the seat of your pants."
+        },
+        {
+            "message_id": "msg:53:speaker-6",
+            "startTime": "15:35",
+            "position": 53,
+            "speaker_id": "speaker-6",
+            "text": "There isn't much cross-committee communication on witnesses. For example, at CHA, I don't know who the frequent flyers are at the Transportation and Infrastructure committee, even when there's crossover. You tend to call your friends, former staffers, and contacts in outside spaces."
+        },
+        {
+            "message_id": "msg:54:speaker-6",
+            "startTime": "16:10",
+            "position": 54,
+            "speaker_id": "speaker-6",
+            "text": "The first and most important step is to talk to your chair and ranking member and ask what story they are trying to tell with a hearing. Then you identify witnesses who share that perspective or can add something interesting to it."
+        },
+        {
+            "message_id": "msg:56:speaker-6",
+            "startTime": "16:52",
+            "position": 56,
+            "speaker_id": "speaker-6",
+            "text": "You don't want witnesses with a completely different perspective than the committee members. Committee staff, with their subject matter expertise, tend to have connections outside Congress and can pull from a pool of known experts for suggestions, who you then vet to see if they'd make a good witness."
+        },
+        {
+            "message_id": "msg:58:speaker-6",
+            "startTime": "17:39",
+            "position": 58,
+            "speaker_id": "speaker-6",
+            "text": "The selection is also very dependent on who can actually make it to the hearing and who can afford to come out here and take time off."
+        },
+        {
+            "message_id": "msg:59:speaker-6",
+            "startTime": "17:47",
+            "position": 59,
+            "speaker_id": "speaker-6",
+            "text": "The pool is also limited by who is already in the DMV area, especially since we no longer have virtual hearings."
+        },
+        {
+            "message_id": "msg:60:speaker-4",
+            "startTime": "18:02",
+            "position": 60,
+            "speaker_id": "speaker-4",
+            "text": "To bring up another point related to committee reports, it would be valuable to better represent the information already being posted. For example, during the appropriations process, committee reports contain nice tables summarizing funding, but they're posted as images of ASCII tables within a PDF."
+        },
+        {
+            "message_id": "msg:61:speaker-4",
+            "startTime": "18:29",
+            "position": 61,
+            "speaker_id": "speaker-4",
+            "text": "This makes it difficult for anyone to consume that data without using machine learning models to overcome something that could be solved by simply providing a CSV file. A similar challenge is linking the funded account to what the rest of the government calls that account, as the taxonomies differ between Treasury, OMB, and the agencies."
+        },
+        {
+            "message_id": "msg:62:speaker-4",
+            "startTime": "19:31",
+            "position": 62,
+            "speaker_id": "speaker-4",
+            "text": "You have to know all of these different naming conventions and sometimes manually overwrite things because there's no unique identifier in the text."
+        },
+        {
+            "message_id": "msg:64:speaker-1",
+            "startTime": "20:00",
+            "position": 64,
+            "speaker_id": "speaker-1",
+            "text": "The problem with PDFs is real. I'm part of a group with GPO working to model report data in USLM. The immediate solution is for committees to post the various parts of the report, like CSVs, on their repository. The long-term roadmap is to get this data properly structured."
+        },
+        {
+            "message_id": "msg:65:speaker-1",
+            "startTime": "20:46",
+            "position": 65,
+            "speaker_id": "speaker-1",
+            "text": "This also directly relates to accessibility for anyone using a screen reader."
+        },
+        {
+            "message_id": "msg:66:speaker-4",
+            "startTime": "20:55",
+            "position": 66,
+            "speaker_id": "JD",
+            "text": "To the point of the Appropriations Committee posting a CSV—they could, but that requires a staffer to take time from an already very busy schedule to do something different, get it approved, and then do it on an ongoing basis. This applies to many of these ideas, like labeling witnesses or attaching identifiers to reports."
+        },
+        {
+            "message_id": "msg:67:speaker-4",
+            "startTime": "21:27",
+            "position": 67,
+            "speaker_id": "JD",
+            "text": "At least right now, it's a staff capacity issue. The fundamental problem committees and Congress are having is that we don't have the capacity to do the work that needs to be done."
+        },
+        {
+            "message_id": "msg:68:speaker-7",
+            "startTime": "21:57",
+            "position": 68,
+            "speaker_id": "speaker-7",
+            "text": "Oftentimes, committees don't have a sense of what they've done in the past. I went and looked at all the committees that had experts write about their history."
+        },
+        {
+            "message_id": "msg:69:speaker-7",
+            "startTime": "22:14",
+            "position": 69,
+            "speaker_id": "speaker-7",
+            "text": "The last great history of the Rules Committee was published in 1982. While committees do biannual reports, there isn't a reflexive understanding of what the committee has done or how it has changed. There is a lack of understanding of what a committee is for or what it has accomplished."
+        },
+        {
+            "message_id": "msg:70:speaker-7",
+            "startTime": "22:53",
+            "position": 70,
+            "speaker_id": "speaker-7",
+            "text": "When you come in as a new staffer or member, how would you know the history of the House Admin committee? There's a lack of this kind of context-making."
+        },
+        {
+            "message_id": "msg:72:speaker-7",
+            "startTime": "23:13",
+            "position": 72,
+            "speaker_id": "speaker-7",
+            "text": "We're talking about how to view work in data, like number of bills processed, but there's also the question of a committee's sense of self. Are they asking experts to come in and analyze what they've been doing? That kind of analysis is useful."
+        },
+        {
+            "message_id": "msg:73:speaker-5",
+            "startTime": "23:32",
+            "position": 73,
+            "speaker_id": "speaker-5",
+            "text": "They could also set mini strategic plans for each Congress."
+        },
+        {
+            "message_id": "msg:74:speaker-4",
+            "startTime": "23:37",
+            "position": 74,
+            "speaker_id": "speaker-4",
+            "text": "Exactly, including defining what their mission is."
+        },
+        {
+            "message_id": "msg:75:speaker-7",
+            "startTime": "23:41",
+            "position": 75,
+            "speaker_id": "speaker-7",
+            "text": "All committees in the House create plans and report on their execution. Having read them, though, it seems to be a pro forma exercise because it's a pain."
+        },
+        {
+            "message_id": "msg:77:speaker-1",
+            "startTime": "24:05",
+            "position": 77,
+            "speaker_id": "speaker-1",
+            "text": "Right, so there are committee activity reports and monthly reports, but you're suggesting something more substantive, like a periodic update on the committee's process and history."
+        },
+        {
+            "message_id": "msg:80:speaker-4",
+            "startTime": "24:39",
+            "position": 80,
+            "speaker_id": "speaker-4",
+            "text": "To add to the witness management part, I can imagine a cohesive scheduler for all meetings. Not only would that create a source of truth for who the witnesses are, it would let you prioritize them, see who's available, and also create transparency."
+        },
+        {
+            "message_id": "msg:81:speaker-7",
+            "startTime": "25:10",
+            "position": 81,
+            "speaker_id": "speaker-7",
+            "text": "You could build it off the witness disclosure form that non-governmental witnesses fill out."
+        },
+        {
+            "message_id": "msg:82:speaker-1",
+            "startTime": "25:16",
+            "position": 82,
+            "speaker_id": "speaker-1",
+            "text": "We really need to have a centralized intake process for witnesses to fill out their information."
+        },
+        {
+            "message_id": "msg:83:speaker-1",
+            "startTime": "25:34",
+            "position": 83,
+            "speaker_id": "speaker-1",
+            "text": "This would give the committees a formal process to make it easier on the witnesses. Right now, all that activity for a non-subpoenaed witness happens over email. This is definitely something on our radar."
+        },
+        {
+            "message_id": "msg:84:speaker-4",
+            "startTime": "25:55",
+            "position": 84,
+            "speaker_id": "speaker-4",
+            "text": "Along with witness testimony and appropriations intake, it would be interesting to know if committees gather constituent feedback while actually developing legislation, not just in a hearing model, but perhaps through a focus group to get a pulse check on a topic."
+        },
+        {
+            "message_id": "msg:86:speaker-6",
+            "startTime": "26:31",
+            "position": 86,
+            "speaker_id": "speaker-6",
+            "text": "The Natural Resources Committee experimented with a platform to collect public comment on a big bill, where people could go in and comment on different parts. I believe Darrell Issa used to do some of that at Oversight as well."
+        },
+        {
+            "message_id": "msg:87:speaker-6",
+            "startTime": "27:11",
+            "position": 87,
+            "speaker_id": "speaker-6",
+            "text": "However, there often aren't a lot of opportunities for committee staff to interact with constituents, as that typically falls on the member offices. Committees don't really have constituents, so staff only get hands-on experience during field hearings."
+        },
+        {
+            "message_id": "msg:88:speaker-6",
+            "startTime": "27:33",
+            "position": 88,
+            "speaker_id": "speaker-6",
+            "text": "Field hearings are not regular opportunities. They're expensive and a pain to do, but they're worth it."
+        },
+        {
+            "message_id": "msg:91:speaker-1",
+            "startTime": "27:50",
+            "position": 91,
+            "speaker_id": "speaker-1",
+            "text": "The appropriations intake process will definitely be a breakout group. Are there any other topics people feel strongly about, or should we continue as one large group?"
+        },
+        {
+            "message_id": "msg:92:speaker-6",
+            "startTime": "28:10",
+            "position": 92,
+            "speaker_id": "speaker-6",
+            "text": "Hearings, witnesses, and joint hearings seem like one group. Data, including committee prints and reporting—public disclosure in general—feels like another."
+        },
+        {
+            "message_id": "msg:96:speaker-5",
+            "startTime": "28:44",
+            "position": 96,
+            "speaker_id": "speaker-5",
+            "text": "Could you explain the 'capacity' bullet point again?"
+        },
+        {
+            "message_id": "msg:97:speaker-4",
+            "startTime": "28:50",
+            "position": 97,
+            "speaker_id": "JD",
+            "text": "Anyone who's worked around Congress understands that everyone wears a lot of hats and works long hours. There's a desire to glorify the work ethic, but it's not just about being zealous in public service."
+        },
+        {
+            "message_id": "msg:98:speaker-4",
+            "startTime": "29:20",
+            "position": 98,
+            "speaker_id": "JD",
+            "text": "It's a result of the fact that most people are doing two or more people's jobs. This is a result of decisions, intentional or otherwise, for Congress to under-resource itself relative to the rest of the government. Our staff sizes are too small, our salary pools are too small, and our ability to implement technology is underfunded."
+        },
+        {
+            "message_id": "msg:99:speaker-5",
+            "startTime": "29:46",
+            "position": 99,
+            "speaker_id": "speaker-5",
+            "text": "That definitely ties in with the MRA budget process issue."
+        },
+        {
+            "message_id": "msg:101:speaker-2",
+            "startTime": "29:58",
+            "position": 101,
+            "speaker_id": "speaker-2",
+            "text": "As I'm listening, it seems there's a need for a standardized intake process to get data from constituents, which could then be pushed from member offices into the member portal we work on. I would find that a useful idea to explore."
+        },
+        {
+            "message_id": "msg:102:speaker-2",
+            "startTime": "30:39",
+            "position": 102,
+            "speaker_id": "speaker-2",
+            "text": "Also, committees use multiple internal systems that are not communicating with each other, which requires staff to enter the same numbers in different places. A key part of modernization is making sure our systems can communicate and transfer information easily to reduce human error."
+        },
+        {
+            "message_id": "msg:106:speaker-7",
+            "startTime": "31:43",
+            "position": 106,
+            "speaker_id": "speaker-7",
+            "text": "How do you even find out when member offices are opening up to receive appropriation requests? Every member office does it at a different time."
+        },
+        {
+            "message_id": "msg:110:speaker-2",
+            "startTime": "31:53",
+            "position": 110,
+            "speaker_id": "speaker-2",
+            "text": "That becomes tricky every year. In theory, we would get the President's budget and then open the portal, but it has been presented late in recent years."
+        },
+        {
+            "message_id": "msg:112:speaker-2",
+            "startTime": "32:16",
+            "position": 112,
+            "speaker_id": "speaker-2",
+            "text": "This creates a strange situation where members submit requests without knowing what the budget is. The whole schedule gets compressed where we're waiting and then suddenly have to go into appropriation season, opening the portal and completing the process in a matter of weeks."
+        },
+        {
+            "message_id": "msg:113:speaker-7",
+            "startTime": "32:49",
+            "position": 113,
+            "speaker_id": "speaker-7",
+            "text": "Even members on the same Appropriations subcommittee will start taking requests at different times. You have to find out by email or by calling them. Then all of their forms are subtly different, which is a lot of fun."
+        },
+        {
+            "message_id": "msg:114:speaker-7",
+            "startTime": "33:30",
+            "position": 114,
+            "speaker_id": "speaker-7",
+            "text": "You don't know what the form is going to look like until you see it. One will ask you to say the same thing, but use a dropdown; another will have you fill in the field."
+        },
+        {
+            "message_id": "msg:115:speaker-4",
+            "startTime": "33:45",
+            "position": 115,
+            "speaker_id": "speaker-4",
+            "text": "Is that really a constituent intake issue, though? I understand why someone in D.C. communicating with seven members of a subcommittee would care, but a constituent is just reaching out to their one member."
+        },
+        {
+            "message_id": "msg:116:speaker-7",
+            "startTime": "34:08",
+            "position": 116,
+            "speaker_id": "speaker-7",
+            "text": "It depends. If you want to build a bridge across five districts and you represent the transit authority, you're dealing with multiple members. It's the same for a community service group like Meals on Wheels that provides services in all of the districts and communicates with all of the appropriators."
+        },
+        {
+            "message_id": "msg:117:speaker-7",
+            "startTime": "34:38",
+            "position": 117,
+            "speaker_id": "speaker-7",
+            "text": "It's usually an intermediary—an association or a non-profit—doing this in multiple places, and the inconsistent process is a time tax. If you represent a large corporation, you can do it, but if you're a small non-profit, it's harder."
+        },
+        {
+            "message_id": "msg:119:speaker-4",
+            "startTime": "35:11",
+            "position": 119,
+            "speaker_id": "speaker-4",
+            "text": "To clarify, you were suggesting groups for hearings and witnesses, appropriations, and potentially oversight?"
+        },
+        {
+            "message_id": "msg:123:speaker-1",
+            "startTime": "35:37",
+            "position": 123,
+            "speaker_id": "speaker-1",
+            "text": "To stay on time, I'd suggest we remain as one group and discuss each of these topics in sequence."
+        },
+        {
+            "message_id": "msg:126:speaker-6",
+            "startTime": "36:12",
+            "position": 126,
+            "speaker_id": "speaker-6",
+            "text": "Let's just do them all as a group."
+        },
+        {
+            "message_id": "msg:128:speaker-1",
+            "startTime": "36:30",
+            "position": 128,
+            "speaker_id": "speaker-1",
+            "text": "I'm thinking about whether Congress needs a general feedback portal. Ideas could bubble up from there into appropriation requests. This could standardize the process for individual constituents and also accommodate the regional representatives working on coalition projects."
+        },
+        {
+            "message_id": "msg:130:speaker-2",
+            "startTime": "37:31",
+            "position": 130,
+            "speaker_id": "speaker-2",
+            "text": "Adding to the tax on staff, from a committee perspective, member offices often wait until a couple of hours before the deadline to submit information. We know this work is sometimes tasked to junior staff who are unfamiliar with the process."
+        },
+        {
+            "message_id": "msg:131:speaker-2",
+            "startTime": "38:20",
+            "position": 131,
+            "speaker_id": "speaker-2",
+            "text": "If you have to gather information from a constituent or a group, you just copy and paste to make sure you submit the work. It makes it extra confusing for them since the forms are already confusing to start with."
+        },
+        {
+            "message_id": "msg:132:speaker-2",
+            "startTime": "38:53",
+            "position": 132,
+            "speaker_id": "speaker-2",
+            "text": "Regarding all the different account names, I'm going through that nightmare myself. It's an internal, institutional conversation we need to have with our partners like the CBO to figure out a better way of tying data together. A lot of the systems we use are at least a decade old and weren't built with the vision to aggregate data the way we need to now."
+        },
+        {
+            "message_id": "msg:133:speaker-2",
+            "startTime": "39:45",
+            "position": 133,
+            "speaker_id": "speaker-2",
+            "text": "So there is a need to make it easier for information to flow from committee to committee or from institution to institution, so we can ingest it and then export or share it."
+        },
+        {
+            "message_id": "msg:134:speaker-8",
+            "startTime": "40:03",
+            "position": 134,
+            "speaker_id": "speaker-8",
+            "text": "What is the current process for constituent-to-member requests? Is it correct that every member does it differently?"
+        },
+        {
+            "message_id": "msg:135:speaker-2",
+            "startTime": "40:19",
+            "position": 135,
+            "speaker_id": "speaker-2",
+            "text": "The Appropriations Committee is not involved in that process at all. Every member has the ability to do the process whichever way they choose."
+        },
+        {
+            "message_id": "msg:136:speaker-8",
+            "startTime": "40:30",
+            "position": 136,
+            "speaker_id": "speaker-8",
+            "text": "As a developer, it's always better when someone else has done some work ahead of time and I can just push data to an official place rather than having to build the rest of the stack. You can easily have a form on a member's website that sends data to multiple places if needed."
+        },
+        {
+            "message_id": "msg:139:speaker-1",
+            "startTime": "41:20",
+            "position": 139,
+            "speaker_id": "speaker-1",
+            "text": "From my experience, members do post a form on their website with a deadline, but people continue to ask for appropriations through email. That becomes our number one email topic, but it's hard to filter effectively since you don't have time to look through every email."
+        },
+        {
+            "message_id": "msg:141:speaker-3",
+            "startTime": "42:09",
+            "position": 141,
+            "speaker_id": "speaker-3",
+            "text": "Petition platforms are used in parliaments elsewhere, where if a petition gets enough support, something concrete happens, like a bill gets a vote on the floor. What disconnect prevents that from happening here? My assumption is that offices are unwilling to cede power to constituents to define their agenda."
+        },
+        {
+            "message_id": "msg:142:speaker-3",
+            "startTime": "42:57",
+            "position": 142,
+            "speaker_id": "speaker-3",
+            "text": "My assumption is that if that feedback loop happens and people see that their participation matters, they'll come back to it. Other countries do this."
+        },
+        {
+            "message_id": "msg:143:speaker-4",
+            "startTime": "43:12",
+            "position": 143,
+            "speaker_id": "JD",
+            "text": "I would argue that sounds more like a capacity issue than an issue of being willing to relinquish power. We already see members with really innovative strategies to engage with their constituents."
+        },
+        {
+            "message_id": "msg:145:speaker-4",
+            "startTime": "43:31",
+            "position": 145,
+            "speaker_id": "JD",
+            "text": "At the individual member level, there would be more innovation and investment in experimental ideas if it were possible. The problem is that staffs are so underfunded and under-resourced that they're just doing what they know works because they need to get through the day."
+        },
+        {
+            "message_id": "msg:146:speaker-3",
+            "startTime": "44:01",
+            "position": 146,
+            "speaker_id": "speaker-3",
+            "text": "Then the top-level suggestion is to double the funding for the legislative branch."
+        },
+        {
+            "message_id": "msg:147:speaker-3",
+            "startTime": "44:09",
+            "position": 147,
+            "speaker_id": "speaker-3",
+            "text": "Seriously, how about the cost of one stealth bomber for the legislative branch? How much of a difference would that make? I think the reason there are so many problems is there aren't enough resources to go around."
+        },
+        {
+            "message_id": "msg:150:speaker-4",
+            "startTime": "44:25",
+            "position": 150,
+            "speaker_id": "JD",
+            "text": "I won't disagree. The figure we often cite is that the legislative branch in its entirety has about the same funding as the Department of Commerce."
+        },
+        {
+            "message_id": "msg:151:speaker-4",
+            "startTime": "44:48",
+            "position": 151,
+            "speaker_id": "JD",
+            "text": "And we're expected to oversee the entire apparatus of the executive branch and produce legislation, which should have been the first thing I said."
+        },
+        {
+            "message_id": "msg:152:speaker-1",
+            "startTime": "44:54",
+            "position": 152,
+            "speaker_id": "speaker-1",
+            "text": "The executive branch has a public comment portal for proposed regulations because they have enough staff to support it. If we had that kind of institutional support, we could do more."
+        },
+        {
+            "message_id": "msg:153:speaker-7",
+            "startTime": "45:20",
+            "position": 153,
+            "speaker_id": "speaker-7",
+            "text": "Two quick things. One, there's the development of Case Compass, which is an effort to mine constituent communication data and surface aggregated, anonymized data across the House. This could identify trends like complaints about infrastructure or VA benefits."
+        },
+        {
+            "message_id": "msg:154:speaker-7",
+            "startTime": "46:16",
+            "position": 154,
+            "speaker_id": "speaker-7",
+            "text": "This is a demand signal, and we haven't made good use of that demand signal yet."
+        },
+        {
+            "message_id": "msg:156:speaker-1",
+            "startTime": "46:26",
+            "position": 156,
+            "speaker_id": "speaker-1",
+            "text": "Also, members of committees will use that casework to find witnesses for hearings, like bringing in a person who has personally experienced the issue."
+        },
+        {
+            "message_id": "msg:158:speaker-7",
+            "startTime": "46:56",
+            "position": 158,
+            "speaker_id": "speaker-7",
+            "text": "The second point is there is no obvious way for experts to directly communicate with committees. In the United Kingdom, there is training for experts to communicate with Parliament through established channels. Here, if I want to file a comment, I have to go on LegiStorm, guess who the right staffer is, and send an email."
+        },
+        {
+            "message_id": "msg:159:speaker-10",
+            "startTime": "47:36",
+            "position": 159,
+            "speaker_id": "speaker-10",
+            "text": "And that communication is not public unless you make it so."
+        },
+        {
+            "message_id": "msg:160:speaker-7",
+            "startTime": "47:39",
+            "position": 160,
+            "speaker_id": "speaker-7",
+            "text": "Exactly. There isn't a feedback loop."
+        },
+        {
+            "message_id": "msg:163:speaker-4",
+            "startTime": "47:57",
+            "position": 163,
+            "speaker_id": "speaker-4",
+            "text": "To Alex's point, even regulations.gov has millions of comments with no public aggregation where an idea can be refined over time. Imagine if there were a public domain where staffers and experts could contribute to an idea that everyone thinks is great."
+        },
+        {
+            "message_id": "msg:164:speaker-4",
+            "startTime": "48:36",
+            "position": 164,
+            "speaker_id": "speaker-4",
+            "text": "Also, I remember some type of effort to structure appropriations data. Does anyone know if that went anywhere?"
+        },
+        {
+            "message_id": "msg:169:speaker-2",
+            "startTime": "48:51",
+            "position": 169,
+            "speaker_id": "speaker-2",
+            "text": "We work very closely with Clint on that. There are many things we want to do, but it comes down to time, because there are a lot of other more pressing needs."
+        },
+        {
+            "message_id": "msg:173:speaker-4",
+            "startTime": "49:20",
+            "position": 173,
+            "speaker_id": "speaker-4",
+            "text": "Regarding public comments on regulations, my president has been working on a platform to explore and bubble up clusters of comment sentiment across dockets. It seems to be an under-resourced space where maybe the CAO or member offices could pilot something."
+        },
+        {
+            "message_id": "msg:174:speaker-4",
+            "startTime": "50:02",
+            "position": 174,
+            "speaker_id": "speaker-4",
+            "text": "Drawing some threads together, there could be a middle point for public input. The UK has a platform where committees can selectively put out questions they want to hear about from experts or the public on a certain subject for an upcoming hearing. It's a targeted, not always-on, approach."
+        },
+        {
+            "message_id": "msg:176:speaker-3",
+            "startTime": "50:58",
+            "position": 176,
+            "speaker_id": "speaker-3",
+            "text": "How do they ensure that all the relevant constituents know about that request for information?"
+        },
+        {
+            "message_id": "msg:177:speaker-4",
+            "startTime": "51:04",
+            "position": 177,
+            "speaker_id": "speaker-4",
+            "text": "It's on a public website. The challenge is the same as getting the public to know about anything the government does."
+        },
+        {
+            "message_id": "msg:178:speaker-1",
+            "startTime": "51:13",
+            "position": 178,
+            "speaker_id": "speaker-1",
+            "text": "Another issue is how we free up all the federally funded research from universities. We pay for it with taxpayer dollars, but then it gets put behind a paywall, so researchers can't even send their papers to their member of Congress. That research should be accessible."
+        },
+        {
+            "message_id": "msg:179:speaker-5",
+            "startTime": "51:43",
+            "position": 179,
+            "speaker_id": "speaker-5",
+            "text": "I'd like to propose using ideation tools to help with appropriations, staff capacity, and feedback. It crowdsources the work to constituents. For example, you could ask people in a district for their ideas for the next appropriation, and they could submit and upvote or downvote ideas."
+        },
+        {
+            "message_id": "msg:180:speaker-5",
+            "startTime": "52:25",
+            "position": 180,
+            "speaker_id": "speaker-5",
+            "text": "Municipalities in places like New Zealand and Australia do this, where people can report a pothole and other constituents can vote on it, which helps the public works department prioritize what to fix."
+        },
+        {
+            "message_id": "msg:182:speaker-5",
+            "startTime": "52:53",
+            "position": 182,
+            "speaker_id": "speaker-5",
+            "text": "A similar process could be used for hearings, where you could have constituents submit and rank questions for the next witnesses. This would give you a top 10 list of questions with no extra work needed for staff—though they still do need more money."
+        },
+        {
+            "message_id": "msg:185:speaker-5",
+            "startTime": "53:54",
+            "position": 185,
+            "speaker_id": "speaker-5",
+            "text": "I can present a couple of the ideas."
+        },
+        {
+            "message_id": "msg:186:speaker-5",
+            "startTime": "54:03",
+            "position": 186,
+            "speaker_id": "speaker-5",
+            "text": "I can talk about the appropriations submission process, joint hearings, and staff capacity."
+        },
+        {
+            "message_id": "msg:190:speaker-8",
+            "startTime": "54:29",
+            "position": 190,
+            "speaker_id": "speaker-8",
+            "text": "I wanted to bring back the discussion about metadata for hearings—tagging them with issue areas, topics, or even which part of a committee's jurisdiction is being covered. For witnesses, I'd love to be able to choose a witness and see all of the hearings they've participated in."
+        },
+        {
+            "message_id": "msg:191:speaker-6",
+            "startTime": "55:06",
+            "position": 191,
+            "speaker_id": "speaker-6",
+            "text": "Perhaps someone could talk about the data aspect of all this."
+        },
+        {
+            "message_id": "msg:192:speaker-4",
+            "startTime": "55:16",
+            "position": 192,
+            "speaker_id": "speaker-4",
+            "text": "You mentioned adding extra metadata and outputting tables as CSVs. I think capacity is the most important thing out of all of this, but witness management would be a good, tangible topic to focus on."
+        },
+        {
+            "message_id": "msg:199:speaker-3",
+            "startTime": "55:55",
+            "position": 199,
+            "speaker_id": "speaker-3",
+            "text": "Don't forget to mention doubling the legislative branch appropriation."
+        },
+        {
+            "message_id": "msg:206:speaker-6",
+            "startTime": "56:13",
+            "position": 206,
+            "speaker_id": "speaker-6",
+            "text": "It was great hearing all these ideas, and hopefully we can get the ball rolling on some of this stuff. I know we are doing work on the data aspects of it, and I will continue to push for different ways of making hearings more useful."
+        }
+    ],
+    "conversation_id": "committee-modernization-discussion-1"
+}
