@@ -68,6 +68,10 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
   focusedMessageId,
   onFocusHandled,
 }) => {
+  const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  const audioSource = `${baseUrl}audio/mono.m4a`;
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredMessages, setFilteredMessages] = useState(messages);
   const [currentTime, setCurrentTime] = useState(0);
@@ -178,19 +182,33 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
     if (!focusedMessageId) return;
 
     const container = listRef.current;
+    const audioEl = audioRef.current;
     if (!container) {
       onFocusHandled?.();
       return;
     }
 
     const target = container.querySelector<HTMLElement>(`[data-message-id="${focusedMessageId}"]`);
+    const targetMessage = messagesWithTimings.find((m) => m.message_id === focusedMessageId);
 
-    if (!target) {
+    if (!target || !targetMessage) {
       onFocusHandled?.();
       return;
     }
 
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const preferredOffset = target.offsetTop - container.clientHeight * 0.3;
+    const maxScrollableTop = Math.max(0, container.scrollHeight - container.clientHeight);
+    const idealTop = Math.min(
+      Math.max(0, preferredOffset),
+      maxScrollableTop
+    );
+    container.scrollTo({ top: idealTop, behavior: 'smooth' });
+
+    if (audioEl && Number.isFinite(targetMessage.startSeconds)) {
+      audioEl.currentTime = targetMessage.startSeconds;
+      setCurrentTime(targetMessage.startSeconds);
+    }
+
     setHighlightedId(focusedMessageId);
 
     const clearHighlight = window.setTimeout(() => setHighlightedId(null), 2200);
@@ -200,11 +218,11 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
       window.clearTimeout(clearHighlight);
       window.clearTimeout(notifyHandled);
     };
-  }, [focusedMessageId, onFocusHandled]);
+  }, [focusedMessageId, onFocusHandled, messagesWithTimings]);
 
   return (
     <div className="h-full flex flex-col">
-      <audio ref={audioRef} src="/audio/mono.m4a" preload="metadata" hidden />
+      <audio ref={audioRef} src={audioSource} preload="metadata" hidden />
       {/* Header */}
       <div className="p-4 border-b border-gray-200 bg-white">
         <h2 className="text-lg font-heading font-semibold text-gray-900">
@@ -272,9 +290,9 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
                 message.message_id === activeMessageId ? 'border-primary-blue ring-2 ring-primary-blue/30 shadow-md' : '',
                 highlightedId === message.message_id ? 'ring-4 ring-accent-amber/60 border-accent-amber/70 shadow-lg' : ''
               )}
-              initial={{ opacity: 0, y: 10 }}
+              initial={index < 12 ? { opacity: 0, y: 10 } : { opacity: 1, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
+              transition={{ duration: 0.25, delay: index < 12 ? index * 0.05 : 0 }}
               onClick={() => handleMessageSelection(message)}
             >
               {/* Message Header */}

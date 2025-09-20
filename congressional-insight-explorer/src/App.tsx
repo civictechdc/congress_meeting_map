@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Header } from './components/Layout/Header';
+import { TopBar } from './components/Layout/TopBar';
 import { ExplorerShell } from './components/MultiModal/ExplorerShell';
 import { CongressionalDataProcessor } from './lib/data-processor';
 import type { CongressionalData, GraphData, TranscriptData } from './lib/types';
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className="h-screen bg-gray-50 flex flex-col">
+      <TopBar />
       <Header onSearchClick={() => setSearchOpen(!searchOpen)} />
       
       <main className="flex-1 min-h-0 overflow-hidden">

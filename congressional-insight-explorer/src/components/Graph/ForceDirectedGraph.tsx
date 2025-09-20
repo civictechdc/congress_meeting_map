@@ -25,6 +25,11 @@ const EDGE_COLOR_PALETTE = [
   '#2dd4bf'
 ];
 
+// Layout spacing controls
+const LINK_DISTANCE = 620; // increase to spread nodes along links
+const CHARGE_STRENGTH = -2200; // stronger repulsion between nodes
+const COLLISION_PADDING = 80; // extra padding around node radius
+
 const clamp = (value: number) => Math.max(0, Math.min(255, value));
 
 const adjustHexColor = (hex: string, amount: number) => {
@@ -135,15 +140,15 @@ export const ForceDirectedGraph: React.FC<ForceDirectedGraphProps> = ({ data }) 
         d3
           .forceLink<GraphNode, GraphEdge>()
           .id((d) => d.id)
-          .distance(480)
+          .distance(LINK_DISTANCE)
           .strength(0.25)
       )
       .force(
         'charge',
-        d3.forceManyBody().strength(-1700).distanceMin(120).distanceMax(1200)
+        d3.forceManyBody().strength(CHARGE_STRENGTH).distanceMin(120).distanceMax(1400)
       )
       .force('center', d3.forceCenter(dimensions.width / 2, dimensions.height / 2))
-      .force('collision', d3.forceCollide<GraphNode>().radius((d) => d.size + 50));
+      .force('collision', d3.forceCollide<GraphNode>().radius((d) => d.size + COLLISION_PADDING));
 
     simulationRef.current = simulation;
     initializedRef.current = true;

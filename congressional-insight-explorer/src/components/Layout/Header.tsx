@@ -19,8 +19,8 @@ export const Header: React.FC<HeaderProps> = ({ onSearchClick }) => {
         <div className="flex items-center justify-between">
           {/* Logo and Title */}
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-              <span className="text-2xl">🏛️</span>
+            <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="/civictechdc.svg" alt="Civic Tech DC" className="w-8 h-8" />
             </div>
             <div>
               <h1 className="text-xl font-heading font-bold">
