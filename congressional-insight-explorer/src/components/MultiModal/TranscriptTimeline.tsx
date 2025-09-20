@@ -7,6 +7,8 @@ import { getAuthorInitials, formatTimestamp, cn } from '../../lib/utils';
 interface TranscriptTimelineProps {
   messages: TranscriptMessage[];
   onMessageClick?: (message: TranscriptMessage) => void;
+  focusedMessageId?: string | null;
+  onFocusHandled?: () => void;
 }
 
 const speakerColors = {
@@ -62,7 +64,9 @@ const formatSeconds = (totalSeconds: number): string => {
 
 export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({ 
   messages, 
-  onMessageClick 
+  onMessageClick,
+  focusedMessageId,
+  onFocusHandled,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredMessages, setFilteredMessages] = useState(messages);
@@ -70,6 +74,8 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
   const [duration, setDuration] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const listRef = useRef<HTMLDivElement | null>(null);
+  const [highlightedId, setHighlightedId] = useState<string | null>(null);
 
   const messagesWithTimings = useMemo(
     () =>
@@ -168,6 +174,34 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
     onMessageClick?.(message);
   };
 
+  useEffect(() => {
+    if (!focusedMessageId) return;
+
+    const container = listRef.current;
+    if (!container) {
+      onFocusHandled?.();
+      return;
+    }
+
+    const target = container.querySelector<HTMLElement>(`[data-message-id="${focusedMessageId}"]`);
+
+    if (!target) {
+      onFocusHandled?.();
+      return;
+    }
+
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setHighlightedId(focusedMessageId);
+
+    const clearHighlight = window.setTimeout(() => setHighlightedId(null), 2200);
+    const notifyHandled = window.setTimeout(() => onFocusHandled?.(), 400);
+
+    return () => {
+      window.clearTimeout(clearHighlight);
+      window.clearTimeout(notifyHandled);
+    };
+  }, [focusedMessageId, onFocusHandled]);
+
   return (
     <div className="h-full flex flex-col">
       <audio ref={audioRef} src="/audio/mono.m4a" preload="metadata" hidden />
@@ -223,7 +257,7 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div ref={listRef} className="flex-1 overflow-y-auto p-4 space-y-4">
         {filteredMessages.length === 0 ? (
           <div className="text-center text-gray-500 py-8">
             <p>No messages found matching "{searchQuery}"</p>
@@ -232,9 +266,11 @@ export const TranscriptTimeline: React.FC<TranscriptTimelineProps> = ({
           filteredMessages.map((message, index) => (
             <motion.div
               key={message.message_id}
+              data-message-id={message.message_id}
               className={cn(
                 'bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-gray-300 transition-colors cursor-pointer',
-                message.message_id === activeMessageId ? 'border-primary-blue ring-2 ring-primary-blue/30 shadow-md' : ''
+                message.message_id === activeMessageId ? 'border-primary-blue ring-2 ring-primary-blue/30 shadow-md' : '',
+                highlightedId === message.message_id ? 'ring-4 ring-accent-amber/60 border-accent-amber/70 shadow-lg' : ''
               )}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

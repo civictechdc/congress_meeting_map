@@ -11,6 +11,9 @@ interface StoreState extends AppState {
   setFilterBySpeaker: (speaker: string | null) => void;
   setGraphZoom: (zoom: number) => void;
   setDetailPaneOpen: (open: boolean) => void;
+  setActivePanel: (panel: 'knowledge' | 'photos' | 'transcript') => void;
+  focusTranscriptMessage: (messageId: string | null) => void;
+  clearFocusedTranscriptMessage: () => void;
   resetFilters: () => void;
 }
 
@@ -24,21 +27,25 @@ export const useStore = create<StoreState>((set) => ({
   filterBySpeaker: null,
   graphZoom: 1,
   detailPaneOpen: false,
+  activePanel: 'knowledge',
+  focusedTranscriptMessageId: null,
 
   // Actions
-  setSelectedCluster: (id) => set({ 
+  setSelectedCluster: (id) => set((state) => ({ 
     selectedClusterId: id, 
     selectedEdgeId: null, // Clear edge selection when selecting cluster
-    detailPaneOpen: id !== null 
-  }),
+    detailPaneOpen: id !== null,
+    activePanel: id ? 'knowledge' : state.activePanel,
+  })),
   
   setHoveredCluster: (id) => set({ hoveredClusterId: id }),
   
-  setSelectedEdge: (id) => set({
+  setSelectedEdge: (id) => set((state) => ({
     selectedEdgeId: id,
     selectedClusterId: null, // Clear cluster selection when selecting edge
-    detailPaneOpen: id !== null
-  }),
+    detailPaneOpen: id !== null,
+    activePanel: id ? 'knowledge' : state.activePanel,
+  })),
   
   setHoveredEdge: (id) => set({ hoveredEdgeId: id }),
   
@@ -48,7 +55,25 @@ export const useStore = create<StoreState>((set) => ({
   
   setGraphZoom: (zoom) => set({ graphZoom: zoom }),
   
-  setDetailPaneOpen: (open) => set({ detailPaneOpen: open }),
+  setDetailPaneOpen: (open) => set((state) => ({ 
+    detailPaneOpen: open,
+    activePanel: open ? 'knowledge' : state.activePanel,
+  })),
+
+  setActivePanel: (panel) => set((state) => ({
+    activePanel: panel,
+    detailPaneOpen: panel === 'knowledge' ? state.detailPaneOpen : false,
+  })),
+
+  focusTranscriptMessage: (messageId) => set({
+    activePanel: 'transcript',
+    focusedTranscriptMessageId: messageId,
+    detailPaneOpen: false,
+    selectedClusterId: null,
+    selectedEdgeId: null,
+  }),
+
+  clearFocusedTranscriptMessage: () => set({ focusedTranscriptMessageId: null }),
   
   resetFilters: () => set({
     searchQuery: '',

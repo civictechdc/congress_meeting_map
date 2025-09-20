@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Layers, Image, MessageSquare, Network } from 'lucide-react';
 import { WhiteboardGallery } from './WhiteboardGallery';
@@ -16,15 +16,20 @@ interface ExplorerShellProps {
   graphData: GraphData;
 }
 
-type ActivePanel = 'photos' | 'transcript' | 'knowledge';
-
 export const ExplorerShell: React.FC<ExplorerShellProps> = ({
   transcriptData,
   congressionalData,
   graphData,
 }) => {
-  const [activePanel, setActivePanel] = useState<ActivePanel>('knowledge');
-  const { selectedClusterId, selectedEdgeId, detailPaneOpen } = useStore();
+  const { 
+    selectedClusterId, 
+    selectedEdgeId, 
+    detailPaneOpen,
+    activePanel,
+    setActivePanel,
+    focusedTranscriptMessageId,
+    clearFocusedTranscriptMessage,
+  } = useStore();
 
   const edgesWithIds = graphData.edges.map((edge, index) => ({
     ...edge,
@@ -99,6 +104,8 @@ export const ExplorerShell: React.FC<ExplorerShellProps> = ({
             {activePanel === 'transcript' && (
               <TranscriptTimeline 
                 messages={transcriptData.messages}
+                focusedMessageId={focusedTranscriptMessageId}
+                onFocusHandled={clearFocusedTranscriptMessage}
                 onMessageClick={handleMessageClick}
               />
             )}

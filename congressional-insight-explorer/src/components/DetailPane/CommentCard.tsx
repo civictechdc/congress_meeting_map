@@ -1,24 +1,40 @@
 import React from 'react';
 import { Clock } from 'lucide-react';
 import type { Comment, Author } from '../../lib/types';
-import { formatTimestamp, getAuthorInitials } from '../../lib/utils';
+import { formatTimestamp, getAuthorInitials, cn } from '../../lib/utils';
 import { motion } from 'framer-motion';
 
 interface CommentCardProps {
   comment: Comment;
   author?: Author;
+  onSelect?: (comment: Comment) => void;
 }
 
-export const CommentCard: React.FC<CommentCardProps> = ({ comment, author }) => {
+export const CommentCard: React.FC<CommentCardProps> = ({ comment, author, onSelect }) => {
   const authorName = author?.name || comment.author;
   const initials = getAuthorInitials(authorName);
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!onSelect) return;
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onSelect(comment);
+    }
+  };
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
-      className="comment-card"
+      onClick={onSelect ? () => onSelect(comment) : undefined}
+      onKeyDown={handleKeyDown}
+      role={onSelect ? 'button' : undefined}
+      tabIndex={onSelect ? 0 : undefined}
+      className={cn(
+        'comment-card',
+        onSelect && 'cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-blue/50'
+      )}
     >
       <div className="flex items-start gap-3">
         {/* Author Avatar */}

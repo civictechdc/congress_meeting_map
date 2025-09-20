@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, MessageSquare, Link2 } from 'lucide-react';
 import type { Thread, Author } from '../../lib/types';
 import { CommentCard } from './CommentCard';
+import { useStore } from '../../lib/store';
 
 interface ThreadAccordionProps {
   thread: Thread;
@@ -11,12 +12,28 @@ interface ThreadAccordionProps {
 
 export const ThreadAccordion: React.FC<ThreadAccordionProps> = ({ thread, authors }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { focusTranscriptMessage } = useStore();
 
   const getAuthor = (authorRef: string) => {
     return authors.find(a => 
       a.name === authorRef || 
       a['@id'].includes(authorRef.toLowerCase().replace(' ', '_'))
     );
+  };
+
+  const mapCommentToTranscriptMessageId = (commentId: string, authorId: string): string | null => {
+    const match = commentId.match(/msg-(\d+)/);
+    if (!match) return null;
+    const numericId = match[1];
+    const normalizedAuthor = authorId.startsWith('speaker-')
+      ? authorId
+      : authorId.trim().toLowerCase().replace(/\s+/g, '-');
+    return `msg:${numericId}:${normalizedAuthor}`;
+  };
+
+  const handleCommentSelect = (comment: Thread['cx:comments'][number]) => {
+    const transcriptId = mapCommentToTranscriptMessageId(comment['@id'], comment.author);
+    focusTranscriptMessage(transcriptId ?? null);
   };
 
   return (
@@ -77,6 +94,7 @@ export const ThreadAccordion: React.FC<ThreadAccordionProps> = ({ thread, author
                   key={comment['@id']} 
                   comment={comment}
                   author={getAuthor(comment.author)}
+                  onSelect={handleCommentSelect}
                 />
               ))}
             </div>

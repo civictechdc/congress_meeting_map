@@ -140,6 +140,8 @@ export interface AppState {
   filterBySpeaker: string | null;
   graphZoom: number;
   detailPaneOpen: boolean;
+  activePanel: 'knowledge' | 'photos' | 'transcript';
+  focusedTranscriptMessageId: string | null;
 }
 
 // Transcript Types
