@@ -1,5 +1,7 @@
 # 🏛️ Congressional Hackathon Breakout Explorer
 
+LIVE: https://civictechdc.github.io/congress_meeting_map/
+
 Made by Civic Tech DC
 - Michael Deeb (mdeeb@civictechdc.org)
 
