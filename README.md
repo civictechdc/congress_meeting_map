@@ -5,6 +5,14 @@ Made by Civic Tech DC
 
 An interactive knowledge graph visualization that transforms congressional hackathon breakout discussions into an explorable, intuitive interface. Built with React, TypeScript, D3.js, and Tailwind CSS.
 
+## 🧪 How This Was Made
+
+- Prototyping: Early concepts and the `data_analysis/idea.md` brief were drafted in Gemini. The static prototype in `data_analysis/` was bootstrapped from those notes in gemini.
+- Data analysis: Dataset exploration and JSON‑LD shaping were performed using a mix of Gemini and ChatGPT, with artifacts preserved under `data_analysis/data/`, `data_analysis/raw_data/`, and `data_analysis/schemas/`.
+- Explorer build: The Vite + React + TypeScript explorer in `congressional-insight-explorer/` was built in Cursor, leveraging Claude Opus (thinking mode) during initial scaffolding and design iteration, then refined through GPT‑5 Codex via Codex for code improvements and polish.
+- Provenance: This README and AGENTS.md document the repo layout and workflow. Commit messages follow conventional commits to reflect iteration stages.
+
+
 ## 🚀 Features
 
 - **Interactive Force-Directed Graph**: Visualize the relationships between different discussion topics
@@ -132,9 +140,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📝 License
 
 MIT License - feel free to use this project for your own purposes.
-
-## 🙏 Acknowledgments
-
-- Data sourced from Congressional Hackathon discussions
-- Inspired by modern data visualization best practices
-- Built for improving congressional transparency and understanding

@@ -472,7 +472,7 @@ export const ForceDirectedGraph: React.FC<ForceDirectedGraphProps> = ({ data }) 
 
   // Update edge styling for selection and hover
   useEffect(() => {
-    if (!svgRef.current) return;
+    if (!ready || !svgRef.current) return;
     const svg = d3.select(svgRef.current);
     
     // Update edge styles
@@ -613,7 +613,7 @@ export const ForceDirectedGraph: React.FC<ForceDirectedGraphProps> = ({ data }) 
         .attr('y', -10);
     });
 
-  }, [selectedEdgeId, hoveredEdgeId, data.edges]);
+  }, [selectedEdgeId, hoveredEdgeId, data.edges, ready]);
 
   // Basic resize handling (single source of truth for width/height)
   useEffect(() => {
