@@ -43,6 +43,16 @@ npm run build
 
 The built files will be in the `dist` directory.
 
+## 🌍 Deployment
+
+This project ships with a GitHub Actions workflow (`.github/workflows/deploy.yml`) that publishes the site to GitHub Pages.
+
+1. In the repository settings, set **Pages → Source** to **GitHub Actions** (required on the first deployment).
+2. Push to the `main` branch or trigger the `Deploy to GitHub Pages` workflow manually.
+3. The workflow installs dependencies, builds the Vite site, and deploys the contents of `dist/` to the `github-pages` environment.
+
+The build uses the `BASE_PATH` environment variable so that assets resolve correctly when served from `https://<user>.github.io/<repository>/`. Custom domains can override this by setting a different `BASE_PATH` value in the workflow or repository secrets.
+
 ## 🎯 Usage
 
 ### Exploring the Graph

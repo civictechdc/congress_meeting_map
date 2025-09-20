@@ -6,9 +6,10 @@ interface WhiteboardGalleryProps {
   onImageClick?: (imageIndex: number) => void;
 }
 
+const baseUrl = import.meta.env.BASE_URL ?? '/';
 const images = [
-  { src: '/images/board_1.jpg', title: 'Whiteboard 1', alt: 'Congressional committee modernization whiteboard notes 1' },
-  { src: '/images/board_2.jpg', title: 'Whiteboard 2', alt: 'Congressional committee modernization whiteboard notes 2' },
+  { src: `${baseUrl}images/board_1.jpg`, title: 'Whiteboard 1', alt: 'Congressional committee modernization whiteboard notes 1' },
+  { src: `${baseUrl}images/board_2.jpg`, title: 'Whiteboard 2', alt: 'Congressional committee modernization whiteboard notes 2' },
 ];
 
 export const WhiteboardGallery: React.FC<WhiteboardGalleryProps> = ({ onImageClick }) => {
