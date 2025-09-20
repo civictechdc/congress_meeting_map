@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Search, Info, Github, Download, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { getPublicAssetUrl } from '../../lib/utils';
+
+const civicTechLogoUrl = getPublicAssetUrl('civictechdc.svg');
+const datasetDownloadUrl = getPublicAssetUrl('files/modern_comm_2025.zip');
 
 interface HeaderProps {
   onSearchClick: () => void;
@@ -20,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({ onSearchClick }) => {
           {/* Logo and Title */}
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center overflow-hidden">
-              <img src="/civictechdc.svg" alt="Civic Tech DC" className="w-8 h-8" />
+              <img src={civicTechLogoUrl} alt="Civic Tech DC" className="w-8 h-8" />
             </div>
             <div>
               <h1 className="text-xl font-heading font-bold">
@@ -35,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({ onSearchClick }) => {
           {/* Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="/files/modern_comm_2025.zip"
+              href={datasetDownloadUrl}
               download
               className="flex items-center gap-2 px-3 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm font-medium transition-colors"
               aria-label="Download Modern Communications data"

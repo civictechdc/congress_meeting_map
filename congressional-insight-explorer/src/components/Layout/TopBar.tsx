@@ -1,4 +1,7 @@
 import React from 'react';
+import { getPublicAssetUrl } from '../../lib/utils';
+
+const civicTechLogoUrl = getPublicAssetUrl('civictechdc.svg');
 
 export const TopBar: React.FC = () => {
   return (
@@ -6,7 +9,7 @@ export const TopBar: React.FC = () => {
       <div className="container mx-auto px-4 py-1">
         <div className="flex items-center justify-center gap-2">
           <a href="https://civictechdc.org" target="_blank" rel="noopener noreferrer" aria-label="Civic Tech DC website">
-            <img src="/civictechdc.svg" alt="Civic Tech DC" className="w-4 h-4" />
+            <img src={civicTechLogoUrl} alt="Civic Tech DC" className="w-4 h-4" />
           </a>
           <p className="text-xs">
             Built by{' '}
